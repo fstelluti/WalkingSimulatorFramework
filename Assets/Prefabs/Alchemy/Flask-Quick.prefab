@@ -1,0 +1,271 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3093208719415752890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3090627100509726230}
+  - component: {fileID: 3070369619278608576}
+  - component: {fileID: 3078293735619750626}
+  m_Layer: 7
+  m_Name: Flask_Cup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3090627100509726230
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093208719415752890}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.139, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3097170049818606996}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3070369619278608576
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093208719415752890}
+  m_Mesh: {fileID: 4300002, guid: 4551ecccffb06a243a01f3cea7c9f5db, type: 3}
+--- !u!23 &3078293735619750626
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093208719415752890}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d187a30aca9306e4cbbf61ecc5c3a8ac, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &3093455249577774814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3097170049818606996}
+  - component: {fileID: 3067626943580308796}
+  - component: {fileID: 3078722284478078824}
+  - component: {fileID: 3092387730928099404}
+  - component: {fileID: 3092387730928099405}
+  m_Layer: 7
+  m_Name: Flask-Quick
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3097170049818606996
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093455249577774814}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 18.132, y: 1.042982, z: -1.411}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3090627100509726230}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &3067626943580308796
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093455249577774814}
+  m_Mesh: {fileID: 4300000, guid: 4551ecccffb06a243a01f3cea7c9f5db, type: 3}
+--- !u!23 &3078722284478078824
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093455249577774814}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: d187a30aca9306e4cbbf61ecc5c3a8ac, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3092387730928099404
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093455249577774814}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.1914573, y: 0.1448536, z: 0.19183582}
+  m_Center: {x: -0.0003789179, y: 0.0724268, z: 0}
+--- !u!114 &3092387730928099405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3093455249577774814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25f4db65d79f0ab42ac068eb85840133, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 1
+  itemInteractEvent:
+    iteractionEventFrequency: 0
+    ActivationEvent:
+      Event:
+        m_PersistentCalls:
+          m_Calls: []
+    DeActivationEvent:
+      Event:
+        m_PersistentCalls:
+          m_Calls: []
+    StartActivated: 0
+  inventoryItem: {fileID: 0}
+  equipmentEventInfo:
+    equipmentItemType: 0
+    equippedItemVar:
+      _owner: {fileID: 3093455249577774814}
+      _ownerName: Flask
+      _propertyPath: equipmentEventInfo.equippedItemVar
+      _autoListen: 0
+      _multiIndex: 0
+      _refType: 2
+      _smartConst: {fileID: 0}
+      _smartVar: {fileID: 0}
+      _smartMulti: {fileID: 0}
+      _onUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    equipmentSpawnLocation: {fileID: 0}
+    equipmentSpawnItem: {fileID: 0}
+    shouldDisableItems: 1
+    onEquipmentItemUsedEvent:
+      iteractionEventFrequency: 0
+      ActivationEvent:
+        Event:
+          m_PersistentCalls:
+            m_Calls: []
+      DeActivationEvent:
+        Event:
+          m_PersistentCalls:
+            m_Calls: []
+      StartActivated: 0
+  itemCrosshairHoverInfo:
+    crosshairSprite: {fileID: 21300000, guid: e497f6269007a4f40bb0769c3c079e3f, type: 3}
+    crosshairImageMaterial: {fileID: 2100000, guid: f9dcaabcce04fed45acb73e82f6b3393, type: 2}
+    crosshairImageSize: {x: 15, y: 15}
+    showText: 1
+    statusText: Examine Flask - quickly
+  highlightItem:
+    highlightLayer:
+      _owner: {fileID: 3093455249577774814}
+      _ownerName: Flask
+      _propertyPath: highlightItem.highlightLayer
+      _autoListen: 0
+      _multiIndex: 0
+      _refType: 2
+      _value: 
+      _smartConst: {fileID: 0}
+      _smartVar: {fileID: 0}
+      _smartMulti: {fileID: 0}
+      _onUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+  inputActionMapData: {fileID: 11400000, guid: 274a957369a1e89488af87f21e635104, type: 2}
+  itemSounds:
+    pickUpSound: {fileID: 0}
+    putBackSound: {fileID: 0}
+    equipmentUseSuccessfulSound: {fileID: 0}
+    equipmentUseUnsuccessfulSound: {fileID: 0}
+    blockedSound: {fileID: 0}
+    openSound: {fileID: 0}
+    closedSound: {fileID: 0}
+  distanceScaleToCamera: 0.5
+  rotationSpeed: 120
+  enableRotationXLimit: 0
+  rotationXLimit: 25
+  useReadingOrientation: 0
+  movementToCameraAnimSpeed: 3
+  enableAnimations: 1

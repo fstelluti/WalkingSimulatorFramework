@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6376305f5d2600b4ead518453a36707d, type: 3}
+  m_Name: Consumeable Item
+  m_EditorClassIdentifier: 
+  id: d32b9af9dc8a89f48990f72700969d12
+  itemSprite: {fileID: 21300000, guid: a0ae2c2168e68504086d936f5b02efa6, type: 3}
+  shouldDestroyImmediately: 1
+  autoUse: 0
+  isStackable: 1
+  maxStacks: 2
+  shortDescription: Use me
+  itemValue: 10

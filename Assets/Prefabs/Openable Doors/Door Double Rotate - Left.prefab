@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4183145294049350231
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5125204919607470624, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: dd22226f353cfe94b9f504ab3f217613, type: 2}
+    - target: {fileID: 5125204919607470625, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919607470627, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: isLinked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919607470627, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: itemCrosshairHoverInfo.text
+      value: 'Open me '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919607470627, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: highlightItem.highlightLayer._owner
+      value: 
+      objectReference: {fileID: 9020119353984628850}
+    - target: {fileID: 5125204919607470627, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: highlightItem.highlightLayer._refType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919607470627, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: itemCrosshairHoverInfo.crosshairSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d718746f4eaf7a84084cfe539db938c3, type: 3}
+    - target: {fileID: 5125204919607470627, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: highlightItem.highlightLayer._ownerName
+      value: DoorMesh
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919607470627, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: highlightItem.highlightLayer._smartConst
+      value: 
+      objectReference: {fileID: 11400000, guid: 08b7d1c1a7d2e234484febe92f6866f6, type: 2}
+    - target: {fileID: 5125204919607470627, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: highlightItem.highlightLayer._propertyPath
+      value: highlightItem.highlightLayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919607470627, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: itemCrosshairHoverInfo.crosshairImageSize.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919607470627, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: itemCrosshairHoverInfo.crosshairImageSize.y
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919607470627, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: itemCrosshairHoverInfo.crosshairImageMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: a7479ee1ac3fff848ab32742f3d427a2, type: 2}
+    - target: {fileID: 5125204919607470631, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919749999294, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: m_Name
+      value: Door Double Rotate - Left
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919749999295, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919749999295, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919749999295, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919749999295, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919749999295, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919749999295, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919749999295, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919749999295, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919749999295, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919749999295, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5125204919749999295, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+--- !u!1 &9020119353984628850 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5125204919607470629, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+  m_PrefabInstance: {fileID: 4183145294049350231}
+  m_PrefabAsset: {fileID: 0}
