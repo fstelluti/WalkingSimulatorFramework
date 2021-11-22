@@ -10,6 +10,7 @@
 * Setup to add animated doors, drawers, cabinets that can open/close
 * Event driven items (ex: light switch toggle)
 * Equipment items that can be used via an inventory UI and used on other items in the scene (ex: keys for doors)
+* Support for sound effects when using items 
 * Test scene with several prefab based examples
 * Basic Inventory UI (included for demonstration purposes)
 
@@ -22,6 +23,14 @@ Compatible with Unity 2020
 Simply download the project, open it with Unity, and open the scene included in the project (SampleScene).
 
 More detailed use cases will be outlined in the Wiki.
+
+---
+
+## Troubleshooting
+
+Check the current [Issues](https://github.com/fstelluti/WalkingSimulatorFramework/issues) to make sure that the problem doesn't already exist.
+
+Otherwise, comments and pull requests are welcome!
 
 ---
 
