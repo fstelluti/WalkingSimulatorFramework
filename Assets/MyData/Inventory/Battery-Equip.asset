@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0461646391993594fb3734e534051733, type: 3}
-  m_Name: Equipable Item 2
+  m_Name: Battery-Equip
   m_EditorClassIdentifier: 
-  id: 96c03d208c8fe7744971b0ebff597f2b
-  itemSprite: {fileID: 21300000, guid: 7836d9227a912184a95761cdcf390323, type: 3}
+  id: 9b99f18b789230e40aed7cc051ec1ae5
+  itemSprite: {fileID: 0}
   shouldDestroyImmediately: 1
   autoUse: 0
   isStackable: 0
   maxStacks: 1
-  shortDescription: Cube thing
-  equipItemType: 2
+  shortDescription: Battery
+  equipItemType: 3

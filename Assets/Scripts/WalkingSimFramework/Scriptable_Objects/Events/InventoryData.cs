@@ -8,7 +8,7 @@ namespace WalkingSimFramework.Scriptable_Objects.Events
     /// Represents the data for a player's inventory system.
     /// Can be used to have different initial starting inventories
     /// </summary>
-    [CreateAssetMenu(fileName = "Inventory Data", menuName = "My Interaction System/Inventory/Inventory Data")]
+    [CreateAssetMenu(fileName = "Inventory Data", menuName = "WalkingSimFramework/Inventory/Inventory Data")]
     public class InventoryData : ScriptableObject 
     {
         // Caller's responsibility to subscribe/unsubscribe

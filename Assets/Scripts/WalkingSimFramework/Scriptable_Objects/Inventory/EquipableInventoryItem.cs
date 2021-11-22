@@ -8,7 +8,7 @@ namespace WalkingSimFramework.Scriptable_Objects.Inventory
     /// <summary>
     /// Item that can be equipped
     /// </summary>
-    [CreateAssetMenu(fileName = "Equipable Item", menuName = "My Interaction System/Inventory/Equipable Item")]
+    [CreateAssetMenu(fileName = "Equipable Item", menuName = "WalkingSimFramework/Inventory/Equipable Item")]
     public class EquipableInventoryItem : InventoryItemBase
     {
         public InventoryEquipmentTypes equipItemType;

@@ -9,7 +9,7 @@ namespace WalkingSimFramework.Scriptable_Objects
     /// Data class that data for the head (camera) bobbing
     /// Credit to VeryHotShark's FPS controller: https://github.com/VeryHotShark/First-Person-Controller-VeryHotShark
     /// </summary>
-    [CreateAssetMenu(fileName = "Head Bobbing Data", menuName = "My Interaction System/HeadBobbingData")]
+    [CreateAssetMenu(fileName = "Head Bobbing Data", menuName = "WalkingSimFramework/HeadBobbingData")]
     public class HeadBobbingData : ScriptableObject
     {
         [BoxGroup("Curves")] public AnimationCurve xCurve;

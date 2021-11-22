@@ -15,7 +15,7 @@ namespace WalkingSimFramework.Scriptable_Objects
     /// Data for random noise applied to either the camera position, rotation, or both
     /// Credit to VeryHotShark's FPS controller: https://github.com/VeryHotShark/First-Person-Controller-VeryHotShark
     /// </summary>
-    [CreateAssetMenu(fileName = "Perlin Camera Noise Data", menuName = "My Interaction System/PerlinCameraNoiseData")]
+    [CreateAssetMenu(fileName = "Perlin Camera Noise Data", menuName = "WalkingSimFramework/PerlinCameraNoiseData")]
     public class PerlinCameraNoiseData : ScriptableObject
     {
         public TransformTarget transformTarget;

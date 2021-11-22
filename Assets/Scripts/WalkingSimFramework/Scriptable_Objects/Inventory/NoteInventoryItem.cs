@@ -9,7 +9,7 @@ namespace WalkingSimFramework.Scriptable_Objects.Inventory
     /// <summary>
     /// Item that can contain text to be viewed 
     /// </summary>
-    [CreateAssetMenu(fileName = "Note Item", menuName = "My Interaction System/Inventory/Note Item")]
+    [CreateAssetMenu(fileName = "Note Item", menuName = "WalkingSimFramework/Inventory/Note Item")]
     public class NoteInventoryItem : InventoryItemBase
     {
         [TextArea(3,20)]

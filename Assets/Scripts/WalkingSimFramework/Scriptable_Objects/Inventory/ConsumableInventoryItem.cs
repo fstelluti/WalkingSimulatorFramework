@@ -9,7 +9,7 @@ namespace WalkingSimFramework.Scriptable_Objects.Inventory
     /// <summary>
     /// Item that can be used used/consumed
     /// </summary>
-    [CreateAssetMenu(fileName = "Consumable Item", menuName = "My Interaction System/Inventory/Consumable Item")]
+    [CreateAssetMenu(fileName = "Consumable Item", menuName = "WalkingSimFramework/Inventory/Consumable Item")]
     public class ConsumableInventoryItem : InventoryItemBase
     {
         [Tooltip("Amount of value the item has (ex: health, money, etc")]

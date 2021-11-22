@@ -8057,6 +8057,10 @@ PrefabInstance:
       value: equippedItemVar
       objectReference: {fileID: 0}
     - target: {fileID: 5883092432461512674, guid: 911b77fc8ccc812418ef8dfd6b491112, type: 3}
+      propertyPath: itemCrosshairHoverInfo.statusText
+      value: Use right away
+      objectReference: {fileID: 0}
+    - target: {fileID: 5883092432461512674, guid: 911b77fc8ccc812418ef8dfd6b491112, type: 3}
       propertyPath: itemCrosshairHoverInfo.crosshairSprite
       value: 
       objectReference: {fileID: 21300000, guid: e497f6269007a4f40bb0769c3c079e3f, type: 3}
@@ -14199,6 +14203,10 @@ PrefabInstance:
       value: equippedItemVar
       objectReference: {fileID: 0}
     - target: {fileID: 5883092432461512674, guid: 911b77fc8ccc812418ef8dfd6b491112, type: 3}
+      propertyPath: itemCrosshairHoverInfo.statusText
+      value: Add to inventory
+      objectReference: {fileID: 0}
+    - target: {fileID: 5883092432461512674, guid: 911b77fc8ccc812418ef8dfd6b491112, type: 3}
       propertyPath: itemCrosshairHoverInfo.crosshairSprite
       value: 
       objectReference: {fileID: 21300000, guid: e497f6269007a4f40bb0769c3c079e3f, type: 3}
@@ -16083,6 +16091,10 @@ PrefabInstance:
       value: equippedItemVar
       objectReference: {fileID: 0}
     - target: {fileID: 5883092432461512674, guid: 911b77fc8ccc812418ef8dfd6b491112, type: 3}
+      propertyPath: itemCrosshairHoverInfo.statusText
+      value: Add to inventory
+      objectReference: {fileID: 0}
+    - target: {fileID: 5883092432461512674, guid: 911b77fc8ccc812418ef8dfd6b491112, type: 3}
       propertyPath: itemCrosshairHoverInfo.crosshairSprite
       value: 
       objectReference: {fileID: 21300000, guid: e497f6269007a4f40bb0769c3c079e3f, type: 3}
@@ -16207,7 +16219,7 @@ MonoBehaviour:
   highlightItem:
     highlightLayer:
       _owner: {fileID: 775328344999914339}
-      _ownerName: Mortar
+      _ownerName: Battery
       _propertyPath: highlightItem.highlightLayer
       _autoListen: 0
       _multiIndex: 0

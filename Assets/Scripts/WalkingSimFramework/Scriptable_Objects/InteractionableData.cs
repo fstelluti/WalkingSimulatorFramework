@@ -9,7 +9,7 @@ namespace WalkingSimFramework.Scriptable_Objects
     /// <summary>
     /// Data class that is essentially a container for managing an InteractableBase object.
     /// </summary>
-    [CreateAssetMenu(fileName = "Interactable Data", menuName = "My Interaction System/InteractionData")]
+    [CreateAssetMenu(fileName = "Interactable Data", menuName = "WalkingSimFramework/InteractionData")]
     public class InteractionableData : ScriptableObject
     {
         private InteractableBase m_interactableBase;

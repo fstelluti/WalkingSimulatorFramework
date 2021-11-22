@@ -24,7 +24,7 @@ namespace WalkingSimFramework.UI_System.HUD
 
         public EquippedPanelData()
         {
-            Description = "";
+            Description = "None";
             ItemSprite = null;
             ItemType = InventoryEquipmentTypes.NONE;
         }
