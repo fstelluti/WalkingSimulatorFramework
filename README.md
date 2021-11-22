@@ -6,6 +6,7 @@
 
 * Ability to examine, use, and equip items in various customizable ways
 * Includes a First Person Controller that uses [Unity's new Input system](https://docs.unity3d.com/Packages/com.unity.inputsystem@1.2/manual/index.html)
+* Uses the Universal Render Pipeline (URP) to highlight items selectively
 * Setup to add animated doors, drawers, cabinets that can open/close
 * Event driven items (ex: light switch toggle)
 * Equipment items that can be used via an inventory UI and used on other items in the scene (ex: keys for doors)
@@ -32,3 +33,4 @@ Uses
 * [SmartData](https://github.com/sigtrapgames/SmartData) - Global data/states and events
 * [Naughty Attributes](https://github.com/dbrizov/NaughtyAttributes) - Inspector improvements 
 * [Free Alchemy and Magic Pack](https://assetstore.unity.com/packages/3d/props/interior/free-alchemy-and-magic-pack-142991) - Scene demonstration assets
+* [Free Sounds](https://freesound.org/) - Item Sounds
