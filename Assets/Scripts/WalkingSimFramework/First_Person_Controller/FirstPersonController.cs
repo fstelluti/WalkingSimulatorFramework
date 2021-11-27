@@ -7,6 +7,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using WalkingSimFramework.Helpers;
 
 namespace WalkingSimFramework.First_Person_Controller
 {
@@ -125,7 +126,7 @@ namespace WalkingSimFramework.First_Person_Controller
         #endregion
 
         // New Input System
-        WalkingSimActionMap InputActionMap;
+        InputActionWrapper InputActionMap;
 
         // Crouching state - Not related to input
         private bool m_isCrouching;
@@ -148,11 +149,11 @@ namespace WalkingSimFramework.First_Person_Controller
         private void InitInteractionActions()
         {
             // Move player
-            InputActionMap.Player.Move.performed += ctx => m_moveVec = ctx.ReadValue<Vector2>();
-            InputActionMap.Player.Move.canceled += _ => m_moveVec = Vector2.zero;
+            InputActionMap.PlayerMoveAction().performed += ctx => m_moveVec = ctx.ReadValue<Vector2>();
+            InputActionMap.PlayerMoveAction().canceled += _ => m_moveVec = Vector2.zero;
 
             // Crouch
-            InputActionMap.Player.Crouch.started += _ =>
+            InputActionMap.PlayerCrouchAction().started += _ =>
             {
                 // Seems like this needs to be called here instead of in Update, as if it is in Update it will be called multiple times.
                 // Calling it here ensures that it is only called on click/press.
@@ -160,23 +161,23 @@ namespace WalkingSimFramework.First_Person_Controller
             };
 
             // Running
-            InputActionMap.Player.Run.started += ctx =>
+            InputActionMap.PlayerRunAction().started += ctx =>
             {
                 m_runVal = ctx.ReadValue<float>();
                 m_runClicked = true;
             };
-            InputActionMap.Player.Run.canceled += _ =>
+            InputActionMap.PlayerRunAction().canceled += _ =>
             {
                 m_runVal = 0f;
                 m_runClicked = false;
             };
 
             // Jump
-            InputActionMap.Player.Jump.performed += ctx =>
+            InputActionMap.PlayerJumpAction().performed += ctx =>
             {
                 m_jumpClicked = true;
             };
-            InputActionMap.Player.Jump.canceled += _ =>
+            InputActionMap.PlayerJumpAction().canceled += _ =>
             {
                 m_jumpClicked = false;
             };

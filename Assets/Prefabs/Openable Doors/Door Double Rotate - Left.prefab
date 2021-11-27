@@ -67,6 +67,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Door Double Rotate - Left
       objectReference: {fileID: 0}
+    - target: {fileID: 5125204919749999294, guid: de221a978c1565d45b8d81a028c44861, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5125204919749999295, guid: de221a978c1565d45b8d81a028c44861, type: 3}
       propertyPath: m_RootOrder
       value: 0

@@ -71,7 +71,7 @@ GameObject:
   - component: {fileID: 7652013657485686010}
   m_Layer: 8
   m_Name: SlidingCabinet
-  m_TagString: Selectable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

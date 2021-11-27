@@ -49,7 +49,7 @@ namespace WalkingSimFramework.Interactable_System
 
         public InteractableItemCrosshairHoverInfo InteractableItemCrosshairHoverInfo => itemCrosshairHoverInfo;
 
-        protected WalkingSimActionMap InpActionMap { get; set; }
+        protected InputActionWrapper InpActionMap { get; set; }
 
         protected virtual void Awake()
         {

@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using WalkingSimFramework.Helpers;
 
 namespace WalkingSimFramework.CameraSystem
 {
@@ -14,7 +15,6 @@ namespace WalkingSimFramework.CameraSystem
     /// </summary>
     public class CameraController : MonoBehaviour
     {
-        //Uses the WalkingSimActionMap, same as in the parent scripts
         [Space, Header("Data")]
         [SerializeField] private InputActionMapData inputActionMapData = null;
 
@@ -37,7 +37,7 @@ namespace WalkingSimFramework.CameraSystem
         private Camera m_cam;
 
         // Input map
-        WalkingSimActionMap m_inputActionMap;
+        InputActionWrapper m_inputActionMap;
 
         // Input values
         private Vector2 m_lookVec;
@@ -66,8 +66,8 @@ namespace WalkingSimFramework.CameraSystem
         void InitInputActions()
         {
             // Look around
-            m_inputActionMap.Player.Look.performed += ctx => m_lookVec = ctx.ReadValue<Vector2>();
-            m_inputActionMap.Player.Look.canceled += _ => m_lookVec = Vector2.zero;
+            m_inputActionMap.PlayerLookAction().performed += ctx => m_lookVec = ctx.ReadValue<Vector2>();
+            m_inputActionMap.PlayerLookAction().canceled += _ => m_lookVec = Vector2.zero;
         }
 
         void GetComponents()
@@ -85,7 +85,7 @@ namespace WalkingSimFramework.CameraSystem
 
         void InitComponents()
         {
-            cameraZoom.Init(m_cam, m_inputActionMap.Player.Zoom);
+            cameraZoom.Init(m_cam, m_inputActionMap.PlayerZoomAction());
             cameraSway.Init(m_cam.transform);
         }
 

@@ -90,29 +90,20 @@ namespace WalkingSimFramework.Interactable_System
                 return;
             }
 
-            if (_isEnabled)
+            if(_isEnabled)
             {
-                InpActionMap.Player.Move.Disable();
-                InpActionMap.Player.Jump.Disable();
-                InpActionMap.Player.Fire.Disable();
-                InpActionMap.Player.Crouch.Disable();
-                InpActionMap.Player.Run.Disable();
-                InpActionMap.Player.Look.Disable();
+                InpActionMap.GetBasicInputs().ForEach(action => action.Disable());
 
-                InpActionMap.Player.MoveExamine.performed += SetRotateVal;
-                InpActionMap.Player.MoveExamine.canceled += _ => m_rotateValue = Vector2.zero;
+                InpActionMap.PlayerMoveExamineAction().performed += SetRotateVal;
+                InpActionMap.PlayerMoveExamineAction().canceled += _ => m_rotateValue = Vector2.zero;
             }
             else
             {
-                InpActionMap.Player.Move.Enable();
-                InpActionMap.Player.Jump.Enable();
-                InpActionMap.Player.Fire.Enable();
-                InpActionMap.Player.Crouch.Enable();
-                InpActionMap.Player.Run.Enable();
-                InpActionMap.Player.Look.Enable();
+                InpActionMap.GetBasicInputs().ForEach(action => action.Enable());
 
-                InpActionMap.Player.MoveExamine.performed -= SetRotateVal;
+                InpActionMap.PlayerMoveExamineAction().performed -= SetRotateVal;
             }
+
         }
 
         private void SetRotateVal(CallbackContext ctx)

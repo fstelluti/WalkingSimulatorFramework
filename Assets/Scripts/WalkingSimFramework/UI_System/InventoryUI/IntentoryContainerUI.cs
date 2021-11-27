@@ -38,22 +38,22 @@ namespace WalkingSimFramework.UI_System.InventoryUI
         [SerializeField] Transform equipItemParent;
         [SerializeField] Transform notesParent;
 
-        ItemInventorySlot[] consumableItemSlots;
-        ItemInventorySlot[] equipItemSlots;
-        ItemInventorySlot[] noteInventorySlots;
+        ItemInventorySlot[] m_ConsumableItemSlots;
+        ItemInventorySlot[] m_EquipItemSlots;
+        ItemInventorySlot[] m_NoteInventorySlots;
 
         TextMeshProUGUI m_noteText;
         Button m_notePopupButton;
 
         ItemInventorySlot m_currentlySelectedEquipmentItemSlot;
 
-        EquippedPanelData equippedData;
+        EquippedPanelData m_EquippedData;
 
-        WalkingSimActionMap InputActionMap;
+        InputActionWrapper m_InputActionMap;
 
         void Awake()
         {
-            InputActionMap = inputActionMapData.InputActionMap;
+            m_InputActionMap = inputActionMapData.InputActionMap;
 
             gameObject.SetActive(false);  // Hide initially
 
@@ -64,9 +64,9 @@ namespace WalkingSimFramework.UI_System.InventoryUI
 
             m_noteText = notePopupPanel.GetComponentInChildren<TextMeshProUGUI>();  // Assume first child is the correct one to display full note text
 
-            consumableItemSlots = consumableItemParent.GetComponentsInChildren<ItemInventorySlot>();
-            noteInventorySlots = notesParent.GetComponentsInChildren<ItemInventorySlot>();
-            equipItemSlots = equipItemParent.GetComponentsInChildren<ItemInventorySlot>();
+            m_ConsumableItemSlots = consumableItemParent.GetComponentsInChildren<ItemInventorySlot>();
+            m_NoteInventorySlots = notesParent.GetComponentsInChildren<ItemInventorySlot>();
+            m_EquipItemSlots = equipItemParent.GetComponentsInChildren<ItemInventorySlot>();
 
             m_notePopupButton = notePopupPanel.gameObject.GetComponentInChildren<Button>();
 
@@ -74,12 +74,12 @@ namespace WalkingSimFramework.UI_System.InventoryUI
             SetupEquipItemEvents();
             SetupNotesItemEvents();
 
-            equippedData = new EquippedPanelData();
+            m_EquippedData = new EquippedPanelData();
         }
 
         private void SetupNotesItemEvents()
         {
-            foreach (ItemInventorySlot noteSlot in noteInventorySlots)
+            foreach (ItemInventorySlot noteSlot in m_NoteInventorySlots)
             {
                 noteSlot.OnInventoryButtonClickEvent += NoteDisplayFromSlot;
             }
@@ -87,7 +87,7 @@ namespace WalkingSimFramework.UI_System.InventoryUI
 
         private void SetupEquipItemEvents()
         {
-            foreach (ItemInventorySlot equipSlot in equipItemSlots)
+            foreach (ItemInventorySlot equipSlot in m_EquipItemSlots)
             {
                 equipSlot.OnInventoryButtonClickEvent += EquipItemFromSlot;
             }
@@ -95,7 +95,7 @@ namespace WalkingSimFramework.UI_System.InventoryUI
 
         private void SetupConsumeItemEvents()
         {
-            foreach (ItemInventorySlot consumeSlot in consumableItemSlots)
+            foreach (ItemInventorySlot consumeSlot in m_ConsumableItemSlots)
             {
                 consumeSlot.OnInventoryButtonClickEvent += ConsumeItemFromSlot;
             }
@@ -126,18 +126,18 @@ namespace WalkingSimFramework.UI_System.InventoryUI
             if (_itemSlot.IsSelected())
             {
                 // Deselect item
-                equippedData = EquippedPanelData.emptyEqipmentData;
+                m_EquippedData = EquippedPanelData.emptyEqipmentData;
             }
             else
             {
-                equippedData.Description = _equipItem.shortDescription;
-                equippedData.ItemSprite = _equipItem.itemSprite;
-                equippedData.ItemType = _equipItem.equipItemType;
+                m_EquippedData.Description = _equipItem.shortDescription;
+                m_EquippedData.ItemSprite = _equipItem.itemSprite;
+                m_EquippedData.ItemType = _equipItem.equipItemType;
 
                 m_currentlySelectedEquipmentItemSlot = _itemSlot;
             }
 
-            equippedItemVar.value = equippedData;
+            equippedItemVar.value = m_EquippedData;
 
             // Could also use a Toggle group here
             ToggleEquipItemSelection(_itemSlot);
@@ -145,7 +145,7 @@ namespace WalkingSimFramework.UI_System.InventoryUI
 
         private void ToggleEquipItemSelection(ItemInventorySlot _itemSlot)
         {
-            foreach (ItemInventorySlot _slot in equipItemSlots)
+            foreach (ItemInventorySlot _slot in m_EquipItemSlots)
             {
                 if (_slot == _itemSlot)
                 {
@@ -178,13 +178,13 @@ namespace WalkingSimFramework.UI_System.InventoryUI
 
         private void InitInventoryPanelActions()
         {
-            InputActionMap.UI.Open.started += ToggleMenuAction;
+            m_InputActionMap.UIOpenAction().started += ToggleMenuAction;
         }
 
         private void ToggleMenuAction(CallbackContext ctx)
         {
             bool _isActive = gameObject.activeSelf;
-            bool _isRegularInputEnabled = InputActionMap.Player.Move.enabled;
+            bool _isRegularInputEnabled = m_InputActionMap.PlayerMoveAction().enabled;
 
             // Hackish, but want to prevent opening up Inventory when examining an item (i.e. when can't move normally)
             if(_isRegularInputEnabled || _isActive)
@@ -251,9 +251,9 @@ namespace WalkingSimFramework.UI_System.InventoryUI
 
         private bool AddToConsumableItemsInventory(InventoryItemBase _item)
         {
-            for(int i=0; i< consumableItemSlots.Length; i++)
+            for(int i=0; i< m_ConsumableItemSlots.Length; i++)
             {
-                ItemInventorySlot _itemInventorySlot = consumableItemSlots[i];
+                ItemInventorySlot _itemInventorySlot = m_ConsumableItemSlots[i];
 
                 if (_itemInventorySlot.Item == null)
                 {
@@ -274,9 +274,9 @@ namespace WalkingSimFramework.UI_System.InventoryUI
 
         private bool AddToEquipableItemsInventory(InventoryItemBase _item)
         {
-            for (int i = 0; i < equipItemSlots.Length; i++)
+            for (int i = 0; i < m_EquipItemSlots.Length; i++)
             {
-                ItemInventorySlot _itemInventorySlot = equipItemSlots[i];
+                ItemInventorySlot _itemInventorySlot = m_EquipItemSlots[i];
 
                 if (_itemInventorySlot.Item == null)
                 {
@@ -297,9 +297,9 @@ namespace WalkingSimFramework.UI_System.InventoryUI
 
         private void RemoveFromConsumableItemsInventory(ItemInventorySlot _itemSlot)
         {
-            for (int i = 0; i < consumableItemSlots.Length; i++)
+            for (int i = 0; i < m_ConsumableItemSlots.Length; i++)
             {
-                if(consumableItemSlots[i] == _itemSlot)
+                if(m_ConsumableItemSlots[i] == _itemSlot)
                 {
                     if(_itemSlot.Item.isStackable && _itemSlot.ItemAmount > 1)
                     {
@@ -316,9 +316,9 @@ namespace WalkingSimFramework.UI_System.InventoryUI
 
         private void RemoveFromEquipItemsInventory(ItemInventorySlot _itemSlot)
         {
-            for (int i = 0; i < equipItemSlots.Length; i++)
+            for (int i = 0; i < m_EquipItemSlots.Length; i++)
             {
-                if (equipItemSlots[i] == _itemSlot)
+                if (m_EquipItemSlots[i] == _itemSlot)
                 {
                     // Assume equipment items are not stackable in this UI
                     _itemSlot.Item = null;
@@ -330,9 +330,9 @@ namespace WalkingSimFramework.UI_System.InventoryUI
 
         private bool AddToNoteItemsInventory(InventoryItemBase _item)
         {
-            for (int i = 0; i < noteInventorySlots.Length; i++)
+            for (int i = 0; i < m_NoteInventorySlots.Length; i++)
             {
-                ItemInventorySlot _itemInventorySlot = noteInventorySlots[i];
+                ItemInventorySlot _itemInventorySlot = m_NoteInventorySlots[i];
 
                 if (_itemInventorySlot.Item == null)
                 {
@@ -363,7 +363,7 @@ namespace WalkingSimFramework.UI_System.InventoryUI
 
         private void SelectFirstButton()
         {
-            if(consumableItemSlots.Length > 0)
+            if(m_ConsumableItemSlots.Length > 0)
             {
                 // Need to clear selection first
                 EventSystem.current.SetSelectedGameObject(null);
@@ -376,7 +376,7 @@ namespace WalkingSimFramework.UI_System.InventoryUI
         private void ToggleInputs(bool _isEnabled)
         {
             // Might still have issues with this being null
-            if (InputActionMap == null)
+            if (m_InputActionMap == null)
             {
                 Debug.LogError("Error: InputActionMap should not be null");
                 return;
@@ -384,25 +384,15 @@ namespace WalkingSimFramework.UI_System.InventoryUI
 
             if (_isEnabled)
             {
-                InputActionMap.Player.Move.Disable();
-                InputActionMap.Player.Jump.Disable();
-                InputActionMap.Player.Fire.Disable();
-                InputActionMap.Player.Crouch.Disable();
-                InputActionMap.Player.Run.Disable();
-                InputActionMap.Player.Look.Disable();
+                m_InputActionMap.GetBasicInputs().ForEach(action => action.Disable());
 
-                InputActionMap.Player.Interact.Disable();
+                m_InputActionMap.PlayerInteractAction().Disable();
             }
             else
             {
-                InputActionMap.Player.Move.Enable();
-                InputActionMap.Player.Jump.Enable();
-                InputActionMap.Player.Fire.Enable();
-                InputActionMap.Player.Crouch.Enable();
-                InputActionMap.Player.Run.Enable();
-                InputActionMap.Player.Look.Enable();
+                m_InputActionMap.GetBasicInputs().ForEach(action => action.Enable());
 
-                InputActionMap.Player.Interact.Enable();
+                m_InputActionMap.PlayerInteractAction().Enable();
             }
         }
 

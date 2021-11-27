@@ -57,7 +57,7 @@ namespace WalkingSimFramework.Interactable_System
         InteractableItemCrosshairHoverInfo m_inventoryHoverInfo;
 
         // New Input System map
-        WalkingSimActionMap InputActionMap;
+        InputActionWrapper InputActionMap;
 
         void Awake()
         {
@@ -85,7 +85,7 @@ namespace WalkingSimFramework.Interactable_System
             InputActionMap = inputActionMapData.InputActionMap;
 
             // Use/interact button
-            InputActionMap.Player.Interact.started += InteractAction;
+            InputActionMap.PlayerInteractAction().started += InteractAction;
         }
 
         private void InteractAction(CallbackContext ctx)

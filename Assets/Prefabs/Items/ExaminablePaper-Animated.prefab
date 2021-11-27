@@ -120,12 +120,12 @@ MonoBehaviour:
         m_PersistentCalls:
           m_Calls: []
     StartActivated: 0
-  inventoryItem: {fileID: 0}
+  inventoryItem: {fileID: 11400000, guid: e227d44927e35324ea5c233fe3f22e59, type: 2}
   equipmentEventInfo:
     equipmentItemType: 0
     equippedItemVar:
       _owner: {fileID: 6559759876969450565}
-      _ownerName: ExaminablePaper
+      _ownerName: ExaminablePaperAnim
       _propertyPath: equipmentEventInfo.equippedItemVar
       _autoListen: 0
       _multiIndex: 0
@@ -159,7 +159,7 @@ MonoBehaviour:
   highlightItem:
     highlightLayer:
       _owner: {fileID: 6559759876969450565}
-      _ownerName: ExaminablePaper
+      _ownerName: ExaminablePaperAnim
       _propertyPath: highlightItem.highlightLayer
       _autoListen: 0
       _multiIndex: 0
@@ -173,8 +173,8 @@ MonoBehaviour:
           m_Calls: []
   inputActionMapData: {fileID: 11400000, guid: 274a957369a1e89488af87f21e635104, type: 2}
   itemSounds:
-    pickUpSound: {fileID: 0}
-    putBackSound: {fileID: 0}
+    pickUpSound: {fileID: 8300000, guid: f1d58ead8331e3d4bb38406d2c5be12c, type: 3}
+    putBackSound: {fileID: 8300000, guid: d7ceab76c6519f94ea20674aa60655ed, type: 3}
     equipmentUseSuccessfulSound: {fileID: 0}
     equipmentUseUnsuccessfulSound: {fileID: 0}
     blockedSound: {fileID: 0}

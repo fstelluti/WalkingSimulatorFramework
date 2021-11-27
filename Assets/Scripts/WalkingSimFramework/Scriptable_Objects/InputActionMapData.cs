@@ -1,6 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using WalkingSimFramework.Helpers;
 
 namespace WalkingSimFramework.Scriptable_Objects
 {
@@ -10,13 +10,13 @@ namespace WalkingSimFramework.Scriptable_Objects
     [CreateAssetMenu(fileName = "Input Action Map Data", menuName = "WalkingSimFramework/InputActionMapData")]
     public class InputActionMapData : ScriptableObject
     {
-        private WalkingSimActionMap m_InputActionMap;
+        private InputActionWrapper m_InputActionMap;
 
-        public WalkingSimActionMap InputActionMap { 
+        public InputActionWrapper InputActionMap { 
             get {
                 if (m_InputActionMap == null)
                 {
-                    m_InputActionMap = new WalkingSimActionMap();
+                    m_InputActionMap = new InputActionWrapper();
                 }
 
                 return m_InputActionMap;
