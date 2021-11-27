@@ -18,6 +18,15 @@ Compatible with Unity 2020
 
 ---
 
+## Setup
+
+Unity Packages needed:
+* Universal Render Pipeline (URP)
+* Input System
+* Probuilder (optional)
+
+---
+
 ## How to use
 
 Simply download the project, open it with Unity, and open the scene included in the project (SampleScene).
