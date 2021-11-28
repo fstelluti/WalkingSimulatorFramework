@@ -10,7 +10,7 @@ namespace WalkingSimFramework.Helpers
     {
         // For now, just list all needed sounds here
         [Space]
-        [SerializeField] private AudioClip pickUpSound;
+        [SerializeField] private AudioClip pickUpOrUseSound;
         [SerializeField] private AudioClip putBackSound;
 
         [Space]
@@ -31,7 +31,7 @@ namespace WalkingSimFramework.Helpers
 
         public AudioSource ItemAudioSource { get => m_audioSource; }
 
-        public AudioClip PickUpSound { get => pickUpSound; set => pickUpSound = value; }
+        public AudioClip PickUpSound { get => pickUpOrUseSound; set => pickUpOrUseSound = value; }
 
         /// <summary>
         /// Creates a temp gameobject to attach an AudioSource component
@@ -56,7 +56,7 @@ namespace WalkingSimFramework.Helpers
         {
             bool isSomeClipValid = false;
 
-            isSomeClipValid |= pickUpSound != null;
+            isSomeClipValid |= pickUpOrUseSound != null;
             isSomeClipValid |= putBackSound != null;
             isSomeClipValid |= equipmentUseSuccessfulSound != null;
             isSomeClipValid |= equipmentUseUnsuccessfulSound != null;
@@ -76,9 +76,9 @@ namespace WalkingSimFramework.Helpers
 
             if (m_isPickUp)
             {
-                if(pickUpSound != null)
+                if(pickUpOrUseSound != null)
                 {
-                    m_audioSource.clip = pickUpSound;
+                    m_audioSource.clip = pickUpOrUseSound;
                 }
             }
             else

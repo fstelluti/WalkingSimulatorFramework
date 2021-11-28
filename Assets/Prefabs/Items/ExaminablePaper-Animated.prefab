@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 6559759876969450565}
   m_LocalRotation: {x: 0.0020425268, y: 0.70710385, z: 0.0020425268, w: -0.70710385}
   m_LocalPosition: {x: 17.889, y: 1.0527, z: 0.65000004}
-  m_LocalScale: {x: 0.3362104, y: 0.013294322, z: 0.3362104}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -41,7 +41,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6559759876969450565}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 6329158148709259305, guid: 7a66f21a801278f42b71a5dc825f776c, type: 3}
 --- !u!23 &6559759876969450566
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 568023be35b3b034496169ae536c1e7a, type: 2}
+  - {fileID: 2100000, guid: 4cc4befc34461e64892104328f4dd6ea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,8 +94,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.1352, y: 0.2603, z: 1.6135002}
+  m_Center: {x: 0.4813, y: 0.09904999, z: -0.13335003}
 --- !u!114 &1717021119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -120,12 +120,12 @@ MonoBehaviour:
         m_PersistentCalls:
           m_Calls: []
     StartActivated: 0
-  inventoryItem: {fileID: 11400000, guid: e227d44927e35324ea5c233fe3f22e59, type: 2}
+  inventoryItem: {fileID: 0}
   equipmentEventInfo:
     equipmentItemType: 0
     equippedItemVar:
       _owner: {fileID: 6559759876969450565}
-      _ownerName: ExaminablePaperAnim
+      _ownerName: ExaminablePaper-Animated
       _propertyPath: equipmentEventInfo.equippedItemVar
       _autoListen: 0
       _multiIndex: 0
@@ -173,8 +173,8 @@ MonoBehaviour:
           m_Calls: []
   inputActionMapData: {fileID: 11400000, guid: 274a957369a1e89488af87f21e635104, type: 2}
   itemSounds:
-    pickUpSound: {fileID: 8300000, guid: f1d58ead8331e3d4bb38406d2c5be12c, type: 3}
-    putBackSound: {fileID: 8300000, guid: d7ceab76c6519f94ea20674aa60655ed, type: 3}
+    pickUpOrUseSound: {fileID: 0}
+    putBackSound: {fileID: 0}
     equipmentUseSuccessfulSound: {fileID: 0}
     equipmentUseUnsuccessfulSound: {fileID: 0}
     blockedSound: {fileID: 0}

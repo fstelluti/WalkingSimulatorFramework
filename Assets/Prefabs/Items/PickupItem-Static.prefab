@@ -125,7 +125,7 @@ MonoBehaviour:
     equipmentItemType: 0
     equippedItemVar:
       _owner: {fileID: 5883092432461512673}
-      _ownerName: PickupCube
+      _ownerName: PickupItem-Static
       _propertyPath: equipmentEventInfo.equippedItemVar
       _autoListen: 0
       _multiIndex: 0
@@ -159,7 +159,7 @@ MonoBehaviour:
   highlightItem:
     highlightLayer:
       _owner: {fileID: 5883092432461512673}
-      _ownerName: PickupCube
+      _ownerName: PickupItem-Static
       _propertyPath: highlightItem.highlightLayer
       _autoListen: 0
       _multiIndex: 0
@@ -173,7 +173,7 @@ MonoBehaviour:
           m_Calls: []
   inputActionMapData: {fileID: 11400000, guid: 274a957369a1e89488af87f21e635104, type: 2}
   itemSounds:
-    pickUpSound: {fileID: 0}
+    pickUpOrUseSound: {fileID: 0}
     putBackSound: {fileID: 0}
     equipmentUseSuccessfulSound: {fileID: 0}
     equipmentUseUnsuccessfulSound: {fileID: 0}

@@ -1,0 +1,182 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8692996336050369339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8692996336050369341}
+  - component: {fileID: 8692996336582653552}
+  - component: {fileID: 8692996336050369343}
+  - component: {fileID: 3857498294802394723}
+  - component: {fileID: 8692996336050369336}
+  m_Layer: 6
+  m_Name: PickupItem-Apple
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8692996336050369341
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8692996336050369339}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 17.736, y: 1.108, z: 0.204}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8692996336582653552
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8692996336050369339}
+  m_Mesh: {fileID: -2432090755550338912, guid: f14d7372dc6669f46917ed76f6d3608b, type: 3}
+--- !u!23 &8692996336050369343
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8692996336050369339}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 1f51076b589b7dd40b16a8e214fd006f, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3857498294802394723
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8692996336050369339}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.52585995, y: 0.54844195, z: 0.531347}
+  m_Center: {x: 0.004005, y: 0.266736, z: 0.0016404986}
+--- !u!114 &8692996336050369336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8692996336050369339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8d36ce5842f9e438981a672f370f56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInteractable: 1
+  itemInteractEvent:
+    iteractionEventFrequency: 0
+    ActivationEvent:
+      Event:
+        m_PersistentCalls:
+          m_Calls: []
+    DeActivationEvent:
+      Event:
+        m_PersistentCalls:
+          m_Calls: []
+    StartActivated: 0
+  inventoryItem: {fileID: 11400000, guid: d32b9af9dc8a89f48990f72700969d12, type: 2}
+  equipmentEventInfo:
+    equipmentItemType: 0
+    equippedItemVar:
+      _owner: {fileID: 8692996336050369339}
+      _ownerName: PickupItem-Apple
+      _propertyPath: equipmentEventInfo.equippedItemVar
+      _autoListen: 0
+      _multiIndex: 0
+      _refType: 2
+      _smartConst: {fileID: 0}
+      _smartVar: {fileID: 0}
+      _smartMulti: {fileID: 0}
+      _onUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+    equipmentSpawnLocation: {fileID: 0}
+    equipmentSpawnItem: {fileID: 0}
+    shouldDisableItems: 1
+    onEquipmentItemUsedEvent:
+      iteractionEventFrequency: 0
+      ActivationEvent:
+        Event:
+          m_PersistentCalls:
+            m_Calls: []
+      DeActivationEvent:
+        Event:
+          m_PersistentCalls:
+            m_Calls: []
+      StartActivated: 0
+  itemCrosshairHoverInfo:
+    crosshairSprite: {fileID: 21300000, guid: e497f6269007a4f40bb0769c3c079e3f, type: 3}
+    crosshairImageMaterial: {fileID: 2100000, guid: ceebd41606c24624aabcd0bb5d569973, type: 2}
+    crosshairImageSize: {x: 15, y: 15}
+    showText: 1
+    statusText: Add to inventory
+  highlightItem:
+    highlightLayer:
+      _owner: {fileID: 8692996336050369339}
+      _ownerName: PickupItem-Apple
+      _propertyPath: highlightItem.highlightLayer
+      _autoListen: 0
+      _multiIndex: 0
+      _refType: 1
+      _value: 
+      _smartConst: {fileID: 11400000, guid: 08b7d1c1a7d2e234484febe92f6866f6, type: 2}
+      _smartVar: {fileID: 0}
+      _smartMulti: {fileID: 0}
+      _onUpdate:
+        m_PersistentCalls:
+          m_Calls: []
+  inputActionMapData: {fileID: 11400000, guid: 274a957369a1e89488af87f21e635104, type: 2}
+  itemSounds:
+    pickUpOrUseSound: {fileID: 0}
+    putBackSound: {fileID: 0}
+    equipmentUseSuccessfulSound: {fileID: 0}
+    equipmentUseUnsuccessfulSound: {fileID: 0}
+    blockedSound: {fileID: 0}
+    openSound: {fileID: 0}
+    closedSound: {fileID: 0}
