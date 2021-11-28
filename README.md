@@ -50,5 +50,5 @@ Uses
 * A modified version of [VeryHotShark's First Person Controller](https://github.com/VeryHotShark/First-Person-Controller-VeryHotShark) - Fixed some minor bugs and upgraded it to be able to use Unity's new Input system.
 * [SmartData](https://github.com/sigtrapgames/SmartData) - Global data/states and events
 * [Naughty Attributes](https://github.com/dbrizov/NaughtyAttributes) - Inspector improvements 
-* [Free Alchemy and Magic Pack](https://assetstore.unity.com/packages/3d/props/interior/free-alchemy-and-magic-pack-142991) - Scene demonstration assets
+* [Free 3D models](https://free3d.com/) - Scene demonstration assets
 * [Free Sounds](https://freesound.org/) - Item Sounds
