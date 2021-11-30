@@ -59,7 +59,10 @@ namespace WalkingSimFramework.Interactable_System
         public override void OnInteract()
         {
             base.OnInteract();
+        }
 
+        protected void OnUseOrPickUpItem()
+        {
             bool _equipmentUsed = OnUseEquippedItem();
 
             // Restrict to one event at a time for now

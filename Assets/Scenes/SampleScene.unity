@@ -10523,6 +10523,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1413381670}
     - target: {fileID: 1717021119, guid: 0a2d2872a30a3bf49905235db46a15a0, type: 3}
+      propertyPath: itemSounds.putBackSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d7ceab76c6519f94ea20674aa60655ed, type: 3}
+    - target: {fileID: 1717021119, guid: 0a2d2872a30a3bf49905235db46a15a0, type: 3}
       propertyPath: equippedItemVar._ownerName
       value: ExaminablePaperAnim2
       objectReference: {fileID: 0}
@@ -10530,6 +10534,10 @@ PrefabInstance:
       propertyPath: itemCrosshairHoverInfo.text
       value: Slow Examine
       objectReference: {fileID: 0}
+    - target: {fileID: 1717021119, guid: 0a2d2872a30a3bf49905235db46a15a0, type: 3}
+      propertyPath: itemSounds.pickUpOrUseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f1d58ead8331e3d4bb38406d2c5be12c, type: 3}
     - target: {fileID: 1717021119, guid: 0a2d2872a30a3bf49905235db46a15a0, type: 3}
       propertyPath: interactionableHighlightData
       value: 
@@ -14305,6 +14313,14 @@ PrefabInstance:
       propertyPath: inventoryItem
       value: 
       objectReference: {fileID: 11400000, guid: e227d44927e35324ea5c233fe3f22e59, type: 2}
+    - target: {fileID: 1717021119, guid: 0a2d2872a30a3bf49905235db46a15a0, type: 3}
+      propertyPath: itemSounds.putBackSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d7ceab76c6519f94ea20674aa60655ed, type: 3}
+    - target: {fileID: 1717021119, guid: 0a2d2872a30a3bf49905235db46a15a0, type: 3}
+      propertyPath: itemSounds.pickUpOrUseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f1d58ead8331e3d4bb38406d2c5be12c, type: 3}
     - target: {fileID: 6559759876969450565, guid: 0a2d2872a30a3bf49905235db46a15a0, type: 3}
       propertyPath: m_Name
       value: ExaminablePaper-Animated-Note-1
@@ -15597,6 +15613,14 @@ PrefabInstance:
       propertyPath: inventoryItem
       value: 
       objectReference: {fileID: 11400000, guid: ff587cf5fa4b7404bbbd8bd09a384830, type: 2}
+    - target: {fileID: 5727278698203947066, guid: 6b49ace47d4c85e43b2e68d0212d632f, type: 3}
+      propertyPath: itemSounds.putBackSound
+      value: 
+      objectReference: {fileID: 8300000, guid: d7ceab76c6519f94ea20674aa60655ed, type: 3}
+    - target: {fileID: 5727278698203947066, guid: 6b49ace47d4c85e43b2e68d0212d632f, type: 3}
+      propertyPath: itemSounds.pickUpOrUseSound
+      value: 
+      objectReference: {fileID: 8300000, guid: f1d58ead8331e3d4bb38406d2c5be12c, type: 3}
     - target: {fileID: 5727278698203947066, guid: 6b49ace47d4c85e43b2e68d0212d632f, type: 3}
       propertyPath: highlightItem.highlightLayer._ownerName
       value: ExaminablePaper-Quick+Note

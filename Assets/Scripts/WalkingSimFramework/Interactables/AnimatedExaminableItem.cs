@@ -55,6 +55,8 @@ namespace WalkingSimFramework.Interactables
             {
                 IsCurrentlyInteracting = !IsCurrentlyInteracting;
 
+                OnUseOrPickUpItem();
+
                 // Enable/Disable needed input actions
                 ToggleInputs(IsCurrentlyInteracting);
 
