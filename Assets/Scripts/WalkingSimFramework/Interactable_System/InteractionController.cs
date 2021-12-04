@@ -18,10 +18,11 @@ namespace WalkingSimFramework.Interactable_System
         [Space, Header("Ray cast Settings")]
         [Tooltip("Max distance that item can be interacted with")]
         [SerializeField] private float rayDistance = 3f;
+        [Tooltip("Size of the ray cast sphere. Larger is less accurate.")]
         [SerializeField] private float raySphereRadius = 0.1f;
         [Tooltip("Which layers can be interaacted with. Deselect layers to be able to ignore certain objects (i.e. to interact with " +
             "something through another object. Warning: FPS Controller needs to be in a layer that isn't in this list, else will hit itself and do nothing.")]
-        [SerializeField] private LayerMask interactabletableLayers = ~0;
+        [SerializeField] private LayerMask interactableLayers = ~0;
 
         [Space, Header("Crosshair")]
         [Tooltip("The script that manages the crosshair UI")]
@@ -37,10 +38,10 @@ namespace WalkingSimFramework.Interactable_System
         [SerializeField] private InventoryData inventoryData = null;
 
         [Space, Header("Proximity Highlight Setings")]
-        [Tooltip("If should highlight items based on proximity, otherwise use per item highlight.")]
-        [SerializeField] private bool useProximityItemHighlight;
         [Tooltip("Which layers can be highlighted for selection. Certain items might not need this, but can still be interacted with, for example doors.")]
         [SerializeField] private LayerMask highlightableItemLayers = 0;
+        [Tooltip("Should highlight items be based on proximity, otherwise use per item highlight.")]
+        [SerializeField] private bool useProximityItemHighlight;
         [Tooltip("Proximity highlight range")]
         [EnableIf("useProximityItemHighlight")]
         [SerializeField] private float proximityRangeRadius = 2.0f;
@@ -207,7 +208,7 @@ namespace WalkingSimFramework.Interactable_System
             Ray _ray = new Ray(m_player_cam.transform.position, m_player_cam.transform.forward);
             RaycastHit _hitInfo;
 
-            if(Physics.SphereCast(_ray, raySphereRadius, out _hitInfo, rayDistance, interactabletableLayers))
+            if(Physics.SphereCast(_ray, raySphereRadius, out _hitInfo, rayDistance, interactableLayers))
             {
                 return _hitInfo.transform.GetComponent<InteractableBase>();
             }

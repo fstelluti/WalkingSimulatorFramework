@@ -581,17 +581,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rayDistance: 3
   raySphereRadius: 0.01
-  interactabletableLayers:
+  interactableLayers:
     serializedVersion: 2
     m_Bits: 4032
   crosshairUI: {fileID: 969693332}
   interactionableData: {fileID: 11400000, guid: c70f2e2ec6dbcc041870e05472a1b458, type: 2}
   inputActionMapData: {fileID: 11400000, guid: 274a957369a1e89488af87f21e635104, type: 2}
   inventoryData: {fileID: 11400000, guid: 7b7d25053f3e1f9439a415322373d88f, type: 2}
-  useProximityItemHighlight: 0
   highlightableItemLayers:
     serializedVersion: 2
     m_Bits: 3008
+  useProximityItemHighlight: 0
   proximityRangeRadius: 2
   maxNumberHighlighedItems: 20
 --- !u!114 &700934594
@@ -711,7 +711,7 @@ MonoBehaviour:
   raySphereRadius: 0.2
   obstacleLayers:
     serializedVersion: 2
-    m_Bits: 9
+    m_Bits: 4105
   rayObstacleLength: 0.4
   rayObstacleSphereRadius: 0.2
   smoothRotateSpeed: 10
@@ -760,7 +760,7 @@ GameObject:
   - component: {fileID: 537096804905232825}
   - component: {fileID: 8391616096836357109}
   - component: {fileID: 7953775019430273766}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
