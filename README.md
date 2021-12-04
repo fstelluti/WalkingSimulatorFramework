@@ -21,15 +21,20 @@ Compatible with Unity 2020
 ## Setup
 
 Unity Packages needed:
-* Universal Render Pipeline (URP)
+
 * Input System
-* Probuilder (optional)
+* Universal Render Pipeline (URP)
+* Naughty Attributes
+* SmartData
 
 ---
 
 ## How to use
 
-Simply download the project, open it with Unity, and open the scene included in the project (SampleScene).
+There are two options. Either download the whole project, open it with Unity, and open the scene included in the project (SampleScene).
+This wiil include a basic Inventory/HUD system.
+
+Or download the Unity package and set it up in another project.
 
 More detailed use cases will be outlined in the Wiki.
 
