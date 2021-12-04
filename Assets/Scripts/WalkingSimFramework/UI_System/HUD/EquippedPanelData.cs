@@ -5,7 +5,7 @@ using UnityEngine;
 namespace WalkingSimFramework.UI_System.HUD
 {
     /// <summary>
-    /// Class representing the data used in the Equip item panel of the inventory
+    /// Demo class representing the data used in the Equip item panel of the inventory
     /// </summary>
     [Serializable]
     public class EquippedPanelData
