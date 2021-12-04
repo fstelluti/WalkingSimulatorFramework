@@ -2,7 +2,6 @@ using WalkingSimFramework.Helpers;
 using WalkingSimFramework.Scriptable_Objects;
 using WalkingSimFramework.Scriptable_Objects.Events;
 using WalkingSimFramework.Scriptable_Objects.Inventory;
-using WalkingSimFramework.UI_System.HUD;
 using SmartData.SmartEquippedPanelData;
 using SmartData.SmartInt;
 using TMPro;

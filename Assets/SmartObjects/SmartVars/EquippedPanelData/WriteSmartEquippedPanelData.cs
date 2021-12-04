@@ -1,4 +1,4 @@
-// SMARTTYPE WalkingSimFramework.UI_System.HUD.EquippedPanelData
+// SMARTTYPE WalkingSimFramework.Scriptable_Objects.EquippedPanelData
 // SMARTTEMPLATE WriteSmartVarTemplate
 // Do not move or delete the above lines
 
@@ -11,6 +11,6 @@ namespace SmartData.SmartEquippedPanelData.Components {
 	/// <summary>
 	/// Serialised write access to a SmartEquippedPanelData.
 	/// </summary>
-	[AddComponentMenu("SmartData/WalkingSimFramework.UI_System.HUD.EquippedPanelData/Write Smart WalkingSimFramework.UI_System.HUD.EquippedPanelData", 1)]
-	public class WriteSmartEquippedPanelData : WriteSmartBase<WalkingSimFramework.UI_System.HUD.EquippedPanelData, EquippedPanelDataWriter> {}
+	[AddComponentMenu("SmartData/WalkingSimFramework.Scriptable_Objects.EquippedPanelData/Write Smart WalkingSimFramework.Scriptable_Objects.EquippedPanelData", 1)]
+	public class WriteSmartEquippedPanelData : WriteSmartBase<WalkingSimFramework.Scriptable_Objects.EquippedPanelData, EquippedPanelDataWriter> {}
 }

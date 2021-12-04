@@ -1,4 +1,4 @@
-// SMARTTYPE WalkingSimFramework.UI_System.HUD.EquippedPanelData
+// SMARTTYPE WalkingSimFramework.Scriptable_Objects.EquippedPanelData
 // SMARTTEMPLATE SmartMultiTemplate
 // Do not move or delete the above lines
 
@@ -14,11 +14,11 @@ namespace SmartData.SmartEquippedPanelData.Data {
 	/// <summary>
 	/// Dynamic collection of EquippedPanelDataVar assets.
 	/// </summary>
-	[CreateAssetMenu(menuName="SmartData/WalkingSimFramework.UI_System.HUD.EquippedPanelData/WalkingSimFramework.UI_System.HUD.EquippedPanelData Multi", order=1)]
-	public class EquippedPanelDataMulti: SmartMulti<WalkingSimFramework.UI_System.HUD.EquippedPanelData, EquippedPanelDataVar>, ISmartMulti<WalkingSimFramework.UI_System.HUD.EquippedPanelData, EquippedPanelDataVar> {
+	[CreateAssetMenu(menuName="SmartData/WalkingSimFramework.Scriptable_Objects.EquippedPanelData/WalkingSimFramework.Scriptable_Objects.EquippedPanelData Multi", order=1)]
+	public class EquippedPanelDataMulti: SmartMulti<WalkingSimFramework.Scriptable_Objects.EquippedPanelData, EquippedPanelDataVar>, ISmartMulti<WalkingSimFramework.Scriptable_Objects.EquippedPanelData, EquippedPanelDataVar> {
 		#if UNITY_EDITOR
-		const string VALUETYPE = "WalkingSimFramework.UI_System.HUD.EquippedPanelData";
-		const string DISPLAYTYPE = "WalkingSimFramework.UI_System.HUD.EquippedPanelData Multi";
+		const string VALUETYPE = "WalkingSimFramework.Scriptable_Objects.EquippedPanelData";
+		const string DISPLAYTYPE = "WalkingSimFramework.Scriptable_Objects.EquippedPanelData Multi";
 		#endif
 	}
 }
@@ -29,15 +29,15 @@ namespace SmartData.SmartEquippedPanelData {
 	/// For write access make a reference to EquippedPanelDataMultiRefWriter.
 	/// </summary>
 	[System.Serializable]
-	public class EquippedPanelDataMultiReader : SmartDataMultiRef<EquippedPanelDataMulti, WalkingSimFramework.UI_System.HUD.EquippedPanelData, EquippedPanelDataVar>  {
-		public static implicit operator WalkingSimFramework.UI_System.HUD.EquippedPanelData(EquippedPanelDataMultiReader r){
+	public class EquippedPanelDataMultiReader : SmartDataMultiRef<EquippedPanelDataMulti, WalkingSimFramework.Scriptable_Objects.EquippedPanelData, EquippedPanelDataVar>  {
+		public static implicit operator WalkingSimFramework.Scriptable_Objects.EquippedPanelData(EquippedPanelDataMultiReader r){
             return r.value;
 		}
 		
 		[SerializeField]
 		Data.EquippedPanelDataVar.EquippedPanelDataEvent _onUpdate = null;
 		
-		protected override System.Action<WalkingSimFramework.UI_System.HUD.EquippedPanelData> GetUnityEventInvoke(){
+		protected override System.Action<WalkingSimFramework.Scriptable_Objects.EquippedPanelData> GetUnityEventInvoke(){
 			return _onUpdate.Invoke;
 		}
 	}
@@ -47,18 +47,18 @@ namespace SmartData.SmartEquippedPanelData {
 	/// UnityEvent disabled by default. If enabled, remember to disable at end of life.
 	/// </summary>
 	[System.Serializable]
-	public class EquippedPanelDataMultiWriter : SmartDataMultiRefWriter<EquippedPanelDataMulti, WalkingSimFramework.UI_System.HUD.EquippedPanelData, EquippedPanelDataVar> {
-		public static implicit operator WalkingSimFramework.UI_System.HUD.EquippedPanelData(EquippedPanelDataMultiWriter r){
+	public class EquippedPanelDataMultiWriter : SmartDataMultiRefWriter<EquippedPanelDataMulti, WalkingSimFramework.Scriptable_Objects.EquippedPanelData, EquippedPanelDataVar> {
+		public static implicit operator WalkingSimFramework.Scriptable_Objects.EquippedPanelData(EquippedPanelDataMultiWriter r){
             return r.value;
 		}
 		
 		[SerializeField]
 		Data.EquippedPanelDataVar.EquippedPanelDataEvent _onUpdate = null;
 		
-		protected override System.Action<WalkingSimFramework.UI_System.HUD.EquippedPanelData> GetUnityEventInvoke(){
+		protected override System.Action<WalkingSimFramework.Scriptable_Objects.EquippedPanelData> GetUnityEventInvoke(){
 			return _onUpdate.Invoke;
 		}
-		protected sealed override void InvokeUnityEvent(WalkingSimFramework.UI_System.HUD.EquippedPanelData value){
+		protected sealed override void InvokeUnityEvent(WalkingSimFramework.Scriptable_Objects.EquippedPanelData value){
 			_onUpdate.Invoke(value);
 		}
 	}

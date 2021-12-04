@@ -1,14 +1,11 @@
-using WalkingSimFramework.Scriptable_Objects.Inventory;
 using NaughtyAttributes;
 using SmartData.SmartEquippedPanelData;
 using SmartData.SmartInt;
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace WalkingSimFramework.UI_System.HUD
+namespace WalkingSimFramework.Scriptable_Objects
 {
     /// <summary>
     /// Demo class to manage the player's HUD system.

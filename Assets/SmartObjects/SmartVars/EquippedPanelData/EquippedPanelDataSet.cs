@@ -1,4 +1,4 @@
-// SMARTTYPE WalkingSimFramework.UI_System.HUD.EquippedPanelData
+// SMARTTYPE WalkingSimFramework.Scriptable_Objects.EquippedPanelData
 // SMARTTEMPLATE SmartSetTemplate
 // Do not move or delete the above lines
 
@@ -15,11 +15,11 @@ namespace SmartData.SmartEquippedPanelData.Data {
 	/// <summary>
 	/// ScriptableObject data set which fires a Relay on data addition/removal.
 	/// <summary>
-	[CreateAssetMenu(menuName="SmartData/WalkingSimFramework.UI_System.HUD.EquippedPanelData/WalkingSimFramework.UI_System.HUD.EquippedPanelData Set", order=2)]
-	public class EquippedPanelDataSet : SmartSet<WalkingSimFramework.UI_System.HUD.EquippedPanelData>, ISmartDataSet<WalkingSimFramework.UI_System.HUD.EquippedPanelData> {
+	[CreateAssetMenu(menuName="SmartData/WalkingSimFramework.Scriptable_Objects.EquippedPanelData/WalkingSimFramework.Scriptable_Objects.EquippedPanelData Set", order=2)]
+	public class EquippedPanelDataSet : SmartSet<WalkingSimFramework.Scriptable_Objects.EquippedPanelData>, ISmartDataSet<WalkingSimFramework.Scriptable_Objects.EquippedPanelData> {
 		#if UNITY_EDITOR
-		const string VALUETYPE = "WalkingSimFramework.UI_System.HUD.EquippedPanelData";
-		const string DISPLAYTYPE = "WalkingSimFramework.UI_System.HUD.EquippedPanelData Set";
+		const string VALUETYPE = "WalkingSimFramework.Scriptable_Objects.EquippedPanelData";
+		const string DISPLAYTYPE = "WalkingSimFramework.Scriptable_Objects.EquippedPanelData Set";
 		#endif
 	}
 }
@@ -31,7 +31,7 @@ namespace SmartData.SmartEquippedPanelData {
 	/// UnityEvent disabled by default. If enabled, remember to disable at end of life.
 	/// </summary>
 	[System.Serializable]
-	public class EquippedPanelDataSetReader : SmartSetRefBase<WalkingSimFramework.UI_System.HUD.EquippedPanelData, EquippedPanelDataSet>, ISmartSetRefReader<WalkingSimFramework.UI_System.HUD.EquippedPanelData> {
+	public class EquippedPanelDataSetReader : SmartSetRefBase<WalkingSimFramework.Scriptable_Objects.EquippedPanelData, EquippedPanelDataSet>, ISmartSetRefReader<WalkingSimFramework.Scriptable_Objects.EquippedPanelData> {
 		[SerializeField]
 		Data.EquippedPanelDataVar.EquippedPanelDataEvent _onAdd = null;
 		[SerializeField]
@@ -39,7 +39,7 @@ namespace SmartData.SmartEquippedPanelData {
 		[SerializeField]
 		Data.EquippedPanelDataVar.EquippedPanelDataEvent _onChange = null;
 		
-		protected override System.Action<SetEventData<WalkingSimFramework.UI_System.HUD.EquippedPanelData>> GetUnityEventInvoke(){
+		protected override System.Action<SetEventData<WalkingSimFramework.Scriptable_Objects.EquippedPanelData>> GetUnityEventInvoke(){
 			return (d)=>{
 				switch (d.operation){
 					case SetOperation.ADDED:
@@ -56,12 +56,12 @@ namespace SmartData.SmartEquippedPanelData {
 		}
 	}
 	/// <summary>
-	/// Write access to EquippedPanelDataSet or List<WalkingSimFramework.UI_System.HUD.EquippedPanelData>, with built-in UnityEvent.
+	/// Write access to EquippedPanelDataSet or List<WalkingSimFramework.Scriptable_Objects.EquippedPanelData>, with built-in UnityEvent.
 	/// For read-only access make a EquippedPanelDataSetRef reference.
 	/// UnityEvent disabled by default. If enabled, remember to disable at end of life.
 	/// </summary>
 	[System.Serializable]
-	public class EquippedPanelDataSetWriter : SmartSetRefWriterBase<WalkingSimFramework.UI_System.HUD.EquippedPanelData, EquippedPanelDataSet>, ISmartSetRefReader<WalkingSimFramework.UI_System.HUD.EquippedPanelData> {
+	public class EquippedPanelDataSetWriter : SmartSetRefWriterBase<WalkingSimFramework.Scriptable_Objects.EquippedPanelData, EquippedPanelDataSet>, ISmartSetRefReader<WalkingSimFramework.Scriptable_Objects.EquippedPanelData> {
 		[SerializeField]
 		Data.EquippedPanelDataVar.EquippedPanelDataEvent _onAdd = null;
 		[SerializeField]
@@ -69,11 +69,11 @@ namespace SmartData.SmartEquippedPanelData {
 		[SerializeField]
 		Data.EquippedPanelDataVar.EquippedPanelDataEvent _onChange = null;
 		
-		protected override System.Action<SetEventData<WalkingSimFramework.UI_System.HUD.EquippedPanelData>> GetUnityEventInvoke(){
+		protected override System.Action<SetEventData<WalkingSimFramework.Scriptable_Objects.EquippedPanelData>> GetUnityEventInvoke(){
 			return InvokeUnityEvent;
 		}
 		
-		protected sealed override void InvokeUnityEvent(SetEventData<WalkingSimFramework.UI_System.HUD.EquippedPanelData> d){
+		protected sealed override void InvokeUnityEvent(SetEventData<WalkingSimFramework.Scriptable_Objects.EquippedPanelData> d){
 			switch (d.operation){
 				case SetOperation.ADDED:
 					_onAdd.Invoke(d.value);

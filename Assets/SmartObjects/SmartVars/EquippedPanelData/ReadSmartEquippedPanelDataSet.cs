@@ -1,4 +1,4 @@
-// SMARTTYPE WalkingSimFramework.UI_System.HUD.EquippedPanelData
+// SMARTTYPE WalkingSimFramework.Scriptable_Objects.EquippedPanelData
 // SMARTTEMPLATE ReadSmartSetTemplate
 // Do not move or delete the above lines
 
@@ -9,8 +9,8 @@ using SmartData.Abstract;
 
 namespace SmartData.SmartEquippedPanelData.Components {
 	/// <summary>
-	/// Automatically listens to a <cref>SmartEquippedPanelDataSet</cref> and fires a <cref>UnityEvent<WalkingSimFramework.UI_System.HUD.EquippedPanelData></cref> when data changes.
+	/// Automatically listens to a <cref>SmartEquippedPanelDataSet</cref> and fires a <cref>UnityEvent<WalkingSimFramework.Scriptable_Objects.EquippedPanelData></cref> when data changes.
 	/// </summary>
-	[AddComponentMenu("SmartData/WalkingSimFramework.UI_System.HUD.EquippedPanelData/Read Smart WalkingSimFramework.UI_System.HUD.EquippedPanelData Set", 2)]
+	[AddComponentMenu("SmartData/WalkingSimFramework.Scriptable_Objects.EquippedPanelData/Read Smart WalkingSimFramework.Scriptable_Objects.EquippedPanelData Set", 2)]
 	public class ReadSmartEquippedPanelDataSet : ReadSmartBase<EquippedPanelDataSetReader> {}
 }

@@ -2,7 +2,7 @@ using WalkingSimFramework.Scriptable_Objects.Inventory;
 using System;
 using UnityEngine;
 
-namespace WalkingSimFramework.UI_System.HUD
+namespace WalkingSimFramework.Scriptable_Objects
 {
     /// <summary>
     /// Demo class representing the data used in the Equip item panel of the inventory

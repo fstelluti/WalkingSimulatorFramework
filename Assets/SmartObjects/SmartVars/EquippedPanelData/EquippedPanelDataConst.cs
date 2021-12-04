@@ -1,4 +1,4 @@
-// SMARTTYPE WalkingSimFramework.UI_System.HUD.EquippedPanelData
+// SMARTTYPE WalkingSimFramework.Scriptable_Objects.EquippedPanelData
 // SMARTTEMPLATE SmartConstTemplate
 // Do not move or delete the above lines
 
@@ -10,13 +10,13 @@ using SmartData.Interfaces;
 
 namespace SmartData.SmartEquippedPanelData.Data {
 	/// <summary>
-	/// ScriptableObject constant WalkingSimFramework.UI_System.HUD.EquippedPanelData.
+	/// ScriptableObject constant WalkingSimFramework.Scriptable_Objects.EquippedPanelData.
 	/// </summary>
-	[CreateAssetMenu(menuName="SmartData/WalkingSimFramework.UI_System.HUD.EquippedPanelData/WalkingSimFramework.UI_System.HUD.EquippedPanelData Const", order=3)]
-	public class EquippedPanelDataConst : SmartConst<WalkingSimFramework.UI_System.HUD.EquippedPanelData>, ISmartConst<WalkingSimFramework.UI_System.HUD.EquippedPanelData> {
+	[CreateAssetMenu(menuName="SmartData/WalkingSimFramework.Scriptable_Objects.EquippedPanelData/WalkingSimFramework.Scriptable_Objects.EquippedPanelData Const", order=3)]
+	public class EquippedPanelDataConst : SmartConst<WalkingSimFramework.Scriptable_Objects.EquippedPanelData>, ISmartConst<WalkingSimFramework.Scriptable_Objects.EquippedPanelData> {
 		#if UNITY_EDITOR
-		const string VALUETYPE = "WalkingSimFramework.UI_System.HUD.EquippedPanelData";
-		const string DISPLAYTYPE = "WalkingSimFramework.UI_System.HUD.EquippedPanelData Const";
+		const string VALUETYPE = "WalkingSimFramework.Scriptable_Objects.EquippedPanelData";
+		const string DISPLAYTYPE = "WalkingSimFramework.Scriptable_Objects.EquippedPanelData Const";
 		#endif
 	}
 }
