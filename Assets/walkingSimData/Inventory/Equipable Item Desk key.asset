@@ -19,4 +19,4 @@ MonoBehaviour:
   isStackable: 0
   maxStacks: 1
   shortDescription: Drawer Key 1
-  equipItemType: 1
+  equipItemType: {fileID: 11400000, guid: ac199bc912a0f9946aad5bc533ae1f16, type: 2}

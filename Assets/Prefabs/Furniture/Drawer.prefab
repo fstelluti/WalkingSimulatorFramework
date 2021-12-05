@@ -1240,7 +1240,7 @@ MonoBehaviour:
     StartActivated: 0
   inventoryItem: {fileID: 0}
   equipmentEventInfo:
-    equipmentItemType: 0
+    equipmentItemType: 1
     equippedItemVar:
       _owner: {fileID: 5541120990671420327}
       _ownerName: DrawerMesh
@@ -1249,7 +1249,7 @@ MonoBehaviour:
       _multiIndex: 0
       _refType: 2
       _smartConst: {fileID: 0}
-      _smartVar: {fileID: 0}
+      _smartVar: {fileID: 11400000, guid: 3f053798d7fa104419d172d33db9b466, type: 2}
       _smartMulti: {fileID: 0}
       _onUpdate:
         m_PersistentCalls:
@@ -1275,30 +1275,17 @@ MonoBehaviour:
     showText: 1
     statusText: Open
   highlightItem:
-    highlightLayer:
-      _owner: {fileID: 5541120990671420327}
-      _ownerName: DrawerMesh
-      _propertyPath: highlightItem.highlightLayer
-      _autoListen: 0
-      _multiIndex: 0
-      _refType: 1
-      _value: 
-      _smartConst: {fileID: 11400000, guid: 08b7d1c1a7d2e234484febe92f6866f6, type: 2}
-      _smartVar: {fileID: 0}
-      _smartMulti: {fileID: 0}
-      _onUpdate:
-        m_PersistentCalls:
-          m_Calls: []
+    highlightLayer: {fileID: 11400000, guid: 08b7d1c1a7d2e234484febe92f6866f6, type: 2}
   inputActionMapData: {fileID: 0}
   itemSounds:
-    pickUpSound: {fileID: 0}
+    pickUpOrUseSound: {fileID: 0}
     putBackSound: {fileID: 0}
     equipmentUseSuccessfulSound: {fileID: 0}
     equipmentUseUnsuccessfulSound: {fileID: 0}
-    blockedSound: {fileID: 0}
-    openSound: {fileID: 0}
-    closedSound: {fileID: 0}
-  isLocked: 0
+    blockedSound: {fileID: 8300000, guid: 9f4df0e7c1bb7a84580f57c44a1e5a5e, type: 3}
+    openSound: {fileID: 8300000, guid: d638b84c5ab17534793d69b70320f57f, type: 3}
+    closedSound: {fileID: 8300000, guid: 44fb8fb315e2232418980850cc823bac, type: 3}
+  isLocked: 1
   lockedText: 'Locked '
   openText: Open
   closedText: Close

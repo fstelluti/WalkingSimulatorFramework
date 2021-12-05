@@ -120,7 +120,7 @@ MonoBehaviour:
         m_PersistentCalls:
           m_Calls: []
     StartActivated: 0
-  inventoryItem: {fileID: 0}
+  inventoryItem: {fileID: 11400000, guid: 48bd68ebf8496c94a8a40db74348f1eb, type: 2}
   equipmentEventInfo:
     equipmentItemType: 0
     equippedItemVar:
@@ -157,21 +157,8 @@ MonoBehaviour:
     showText: 1
     statusText: Equip me
   highlightItem:
-    highlightLayer:
-      _owner: {fileID: 1697036527555587752}
-      _ownerName: PickupItem-Equipment-Key
-      _propertyPath: highlightItem.highlightLayer
-      _autoListen: 0
-      _multiIndex: 0
-      _refType: 1
-      _value: 
-      _smartConst: {fileID: 11400000, guid: 08b7d1c1a7d2e234484febe92f6866f6, type: 2}
-      _smartVar: {fileID: 0}
-      _smartMulti: {fileID: 0}
-      _onUpdate:
-        m_PersistentCalls:
-          m_Calls: []
-  inputActionMapData: {fileID: 11400000, guid: 274a957369a1e89488af87f21e635104, type: 2}
+    highlightLayer: {fileID: 11400000, guid: 08b7d1c1a7d2e234484febe92f6866f6, type: 2}
+  inputActionMapData: {fileID: 0}
   itemSounds:
     pickUpOrUseSound: {fileID: 0}
     putBackSound: {fileID: 0}

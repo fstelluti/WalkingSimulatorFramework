@@ -19,4 +19,4 @@ MonoBehaviour:
   isStackable: 0
   maxStacks: 1
   shortDescription: Door key 1
-  equipItemType: 2
+  equipItemType: {fileID: 11400000, guid: 7ad05f09c390b2541a2b0d51173578b4, type: 2}

@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9156964253736016392}
-  m_LocalRotation: {x: -0, y: -0.70710677, z: -0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 17.72, y: 1.1015, z: -0.975}
   m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
   m_Children: []
@@ -157,20 +157,7 @@ MonoBehaviour:
     showText: 1
     statusText: Rotate freely
   highlightItem:
-    highlightLayer:
-      _owner: {fileID: 9156964253736016392}
-      _ownerName: PickupCube (2)
-      _propertyPath: highlightItem.highlightLayer
-      _autoListen: 0
-      _multiIndex: 0
-      _refType: 1
-      _value: 
-      _smartConst: {fileID: 11400000, guid: 08b7d1c1a7d2e234484febe92f6866f6, type: 2}
-      _smartVar: {fileID: 0}
-      _smartMulti: {fileID: 0}
-      _onUpdate:
-        m_PersistentCalls:
-          m_Calls: []
+    highlightLayer: {fileID: 11400000, guid: 08b7d1c1a7d2e234484febe92f6866f6, type: 2}
   inputActionMapData: {fileID: 11400000, guid: 274a957369a1e89488af87f21e635104, type: 2}
   itemSounds:
     pickUpOrUseSound: {fileID: 0}

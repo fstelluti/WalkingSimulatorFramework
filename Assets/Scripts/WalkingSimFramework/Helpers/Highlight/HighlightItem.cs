@@ -1,6 +1,4 @@
-using SmartData.SmartString;
-using System.Collections;
-using System.Collections.Generic;
+using SmartData.SmartString.Data;
 using UnityEngine;
 
 namespace WalkingSimFramework.Helpers.Highlight
@@ -11,7 +9,7 @@ namespace WalkingSimFramework.Helpers.Highlight
     [System.Serializable]
     public class HighlightItem : IInteractableHighlight
     {
-        [SerializeField] StringReader highlightLayer;
+        [SerializeField] StringConst highlightLayer;
 
         int m_highlightLayer = -1;
         int m_defaultLayer = -1;
@@ -22,8 +20,7 @@ namespace WalkingSimFramework.Helpers.Highlight
         {
             m_itemObject = _gameObject;
             m_defaultLayer = _gameObject.layer;
-
-            if(highlightLayer.isValid)
+            if(highlightLayer != null)
             {
                 m_highlightLayer = LayerMask.NameToLayer(highlightLayer.value);
             }

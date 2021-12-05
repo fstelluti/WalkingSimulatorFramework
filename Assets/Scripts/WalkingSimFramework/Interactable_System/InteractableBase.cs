@@ -3,6 +3,7 @@ using WalkingSimFramework.Helpers.Highlight;
 using WalkingSimFramework.Scriptable_Objects;
 using WalkingSimFramework.Scriptable_Objects.Inventory;
 using UnityEngine;
+using NaughtyAttributes;
 
 namespace WalkingSimFramework.Interactable_System
 {
@@ -30,6 +31,8 @@ namespace WalkingSimFramework.Interactable_System
         [Space, Header("Interaction Data")]
         [Tooltip("Layer in the URP asset that us used for highlighing items. Note: Currently this only supports opaque meshes.")]
         [SerializeField] private HighlightItem highlightItem;
+
+        [InfoBox("Input action data is only required for items that change the current input map (i.e. when controls are changed like when examining an item)", EInfoBoxType.Normal)]
         [Tooltip("Data used to hold the current input action map")]
         [SerializeField] private InputActionMapData inputActionMapData = null;
 
@@ -91,7 +94,7 @@ namespace WalkingSimFramework.Interactable_System
 
         public bool IsCorrectItemEqipped()
         {
-            return equipmentEventInfo.EquippedItemVar.isValid && equipmentEventInfo.EquipmentItemType == equipmentEventInfo.EquippedItemVar.value.ItemType;
+            return equipmentEventInfo.EquippedItemVar.isValid && (equipmentEventInfo.EquipmentItemType.Equals(equipmentEventInfo.EquippedItemVar.value.ItemType));
         }
 
         public bool IsWrongItemEqipped()
@@ -101,9 +104,9 @@ namespace WalkingSimFramework.Interactable_System
                 return false; // If have no equipment set, vacuously have correct item
             }
 
-            bool _isEmpty = equipmentEventInfo.EquippedItemVar.value.ItemType == InventoryEquipmentTypes.NONE;
+            bool _isEmpty = equipmentEventInfo.EquippedItemVar.value.ItemType == null;
 
-            return !_isEmpty && equipmentEventInfo.EquipmentItemType != equipmentEventInfo.EquippedItemVar.value.ItemType;
+            return !_isEmpty && !equipmentEventInfo.EquipmentItemType.Equals(equipmentEventInfo.EquippedItemVar.value.ItemType);
         }
 
         /// <summary>

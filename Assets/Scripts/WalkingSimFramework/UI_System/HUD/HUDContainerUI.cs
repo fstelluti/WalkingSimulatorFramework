@@ -1,5 +1,5 @@
 using NaughtyAttributes;
-using SmartData.SmartEquippedPanelData;
+using SmartData.SmartEquipmentPanelData;
 using SmartData.SmartInt;
 using TMPro;
 using UnityEngine;
@@ -18,7 +18,7 @@ namespace WalkingSimFramework.Scriptable_Objects
         [BoxGroup("Health")] [SerializeField] IntReader maxHealth;
 
         [Space]
-        [BoxGroup("Equipment")] [SerializeField] EquippedPanelDataReader equippedItemVar;
+        [BoxGroup("Equipment")] [SerializeField] EquipmentPanelDataReader equippedItemVar;
 
         [Space]
         [BoxGroup("Equipment")] [SerializeField] Image equippedItemImage;
@@ -52,7 +52,7 @@ namespace WalkingSimFramework.Scriptable_Objects
 
         public void UpdateCurrentlyEquippedItem()
         {
-            if(!currentEquipDescription.Equals(equippedItemVar.value.Description))
+            if (!currentEquipDescription.Equals(equippedItemVar.value.Description))
             {
                 equippedItemImage.sprite = equippedItemVar.value.ItemSprite;
 

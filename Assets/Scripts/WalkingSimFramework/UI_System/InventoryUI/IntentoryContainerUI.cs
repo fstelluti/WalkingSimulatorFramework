@@ -2,8 +2,8 @@ using WalkingSimFramework.Helpers;
 using WalkingSimFramework.Scriptable_Objects;
 using WalkingSimFramework.Scriptable_Objects.Events;
 using WalkingSimFramework.Scriptable_Objects.Inventory;
-using SmartData.SmartEquippedPanelData;
 using SmartData.SmartInt;
+using SmartData.SmartEquipmentPanelData;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -23,7 +23,7 @@ namespace WalkingSimFramework.UI_System.InventoryUI
 
         [Space, Header("Smart Data")]
         [SerializeField] IntWriter healthVar;
-        [SerializeField] EquippedPanelDataWriter equippedItemVar;
+        [SerializeField] EquipmentPanelDataWriter equippedItemVar;
 
         [Space]
         [SerializeField] Transform notePopupPanel;
@@ -46,7 +46,7 @@ namespace WalkingSimFramework.UI_System.InventoryUI
 
         ItemInventorySlot m_currentlySelectedEquipmentItemSlot;
 
-        EquippedPanelData m_EquippedData;
+        EquipmentPanelData m_EquippedData;
 
         InputActionWrapper m_InputActionMap;
 
@@ -73,7 +73,7 @@ namespace WalkingSimFramework.UI_System.InventoryUI
             SetupEquipItemEvents();
             SetupNotesItemEvents();
 
-            m_EquippedData = new EquippedPanelData();
+            m_EquippedData = new EquipmentPanelData();
         }
 
         private void SetupNotesItemEvents()
@@ -125,7 +125,7 @@ namespace WalkingSimFramework.UI_System.InventoryUI
             if (_itemSlot.IsSelected())
             {
                 // Deselect item
-                m_EquippedData = EquippedPanelData.emptyEqipmentData;
+                m_EquippedData.ClearEquipmentPanelData();
             }
             else
             {
@@ -135,7 +135,7 @@ namespace WalkingSimFramework.UI_System.InventoryUI
 
                 m_currentlySelectedEquipmentItemSlot = _itemSlot;
             }
-
+            //Debug.Log(m_EquippedData.ToString());
             equippedItemVar.value = m_EquippedData;
 
             // Could also use a Toggle group here
@@ -233,7 +233,8 @@ namespace WalkingSimFramework.UI_System.InventoryUI
         {
             if (equippedItemVar.isValid)
             {
-                equippedItemVar.value = EquippedPanelData.emptyEqipmentData;
+                m_EquippedData.ClearEquipmentPanelData();
+                equippedItemVar.value = m_EquippedData;
 
                 // Remove from inventory data and UI
                 if(m_currentlySelectedEquipmentItemSlot != null)

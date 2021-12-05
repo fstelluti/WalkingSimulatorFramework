@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473683663066691251}
-  m_LocalRotation: {x: 0.0020425904, y: 0.70710456, z: 0.0020425955, w: -0.70710313}
+  m_LocalRotation: {x: 0.0020425268, y: 0.70710385, z: 0.0020425268, w: -0.70710385}
   m_LocalPosition: {x: 17.932, y: 1.053, z: -0.44}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_Children: []
@@ -120,12 +120,12 @@ MonoBehaviour:
         m_PersistentCalls:
           m_Calls: []
     StartActivated: 0
-  inventoryItem: {fileID: 0}
+  inventoryItem: {fileID: 11400000, guid: ff587cf5fa4b7404bbbd8bd09a384830, type: 2}
   equipmentEventInfo:
     equipmentItemType: 0
     equippedItemVar:
       _owner: {fileID: 1473683663066691251}
-      _ownerName: ExaminablePaperQuick
+      _ownerName: ExaminablePaper-Quick+Note
       _propertyPath: equipmentEventInfo.equippedItemVar
       _autoListen: 0
       _multiIndex: 0
@@ -157,24 +157,11 @@ MonoBehaviour:
     showText: 1
     statusText: Quick read me
   highlightItem:
-    highlightLayer:
-      _owner: {fileID: 1473683663066691251}
-      _ownerName: ExaminablePaper-Quick
-      _propertyPath: highlightItem.highlightLayer
-      _autoListen: 0
-      _multiIndex: 0
-      _refType: 1
-      _value: 
-      _smartConst: {fileID: 11400000, guid: 08b7d1c1a7d2e234484febe92f6866f6, type: 2}
-      _smartVar: {fileID: 0}
-      _smartMulti: {fileID: 0}
-      _onUpdate:
-        m_PersistentCalls:
-          m_Calls: []
+    highlightLayer: {fileID: 11400000, guid: 08b7d1c1a7d2e234484febe92f6866f6, type: 2}
   inputActionMapData: {fileID: 11400000, guid: 274a957369a1e89488af87f21e635104, type: 2}
   itemSounds:
-    pickUpOrUseSound: {fileID: 0}
-    putBackSound: {fileID: 0}
+    pickUpOrUseSound: {fileID: 8300000, guid: f1d58ead8331e3d4bb38406d2c5be12c, type: 3}
+    putBackSound: {fileID: 8300000, guid: d7ceab76c6519f94ea20674aa60655ed, type: 3}
     equipmentUseSuccessfulSound: {fileID: 0}
     equipmentUseUnsuccessfulSound: {fileID: 0}
     blockedSound: {fileID: 0}

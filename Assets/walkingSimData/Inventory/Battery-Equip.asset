@@ -19,4 +19,4 @@ MonoBehaviour:
   isStackable: 0
   maxStacks: 1
   shortDescription: Battery
-  equipItemType: 3
+  equipItemType: {fileID: 11400000, guid: 196b4d48593766f408f293fb523cf64b, type: 2}
