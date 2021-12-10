@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6559759876969450617}
   - component: {fileID: 6559759876969450566}
   - component: {fileID: 6559759876969450567}
-  - component: {fileID: 1813397190}
+  - component: {fileID: 3649706665005170276}
   m_Layer: 7
   m_Name: ExaminablePaper-Animated
   m_TagString: Untagged
@@ -96,7 +96,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.1352, y: 0.2603, z: 1.6135002}
   m_Center: {x: 0.4813, y: 0.09904999, z: -0.13335003}
---- !u!114 &1813397190
+--- !u!114 &3649706665005170276
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6559759876969450565}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25f4db65d79f0ab42ac068eb85840133, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e5e528228c0fe74ca3a0437ca4b2aff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isInteractable: 1
@@ -122,11 +122,11 @@ MonoBehaviour:
     StartActivated: 0
   inventoryItem: {fileID: 0}
   equipmentEventInfo:
-    equipmentItemType: 0
+    equipmentItemType: {fileID: 0}
     equippedItemVar:
-      _owner: {fileID: 0}
-      _ownerName: 
-      _propertyPath: 
+      _owner: {fileID: 6559759876969450565}
+      _ownerName: ExaminablePaper-Animated
+      _propertyPath: equipmentEventInfo.equippedItemVar
       _autoListen: 0
       _multiIndex: 0
       _refType: 2
@@ -155,7 +155,7 @@ MonoBehaviour:
     crosshairImageMaterial: {fileID: 2100000, guid: f9dcaabcce04fed45acb73e82f6b3393, type: 2}
     crosshairImageSize: {x: 15, y: 15}
     showText: 1
-    statusText: Quick read me
+    statusText: Animated  read me
   highlightItem:
     highlightLayer: {fileID: 11400000, guid: 08b7d1c1a7d2e234484febe92f6866f6, type: 2}
   inputActionMapData: {fileID: 11400000, guid: 274a957369a1e89488af87f21e635104, type: 2}
@@ -170,7 +170,8 @@ MonoBehaviour:
   distanceScaleToCamera: 0.5
   rotationSpeed: 120
   enableRotationXLimit: 1
-  rotationXLimit: 25
+  rotationXLimit: 30
   useReadingOrientation: 1
-  movementToCameraAnimSpeed: 3
-  enableAnimations: 1
+  roatateToAnimSpeed: 25
+  roatateBackAnimSpeed: 35
+  movementAnimSpeed: 3

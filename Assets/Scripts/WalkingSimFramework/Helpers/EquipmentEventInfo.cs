@@ -17,7 +17,7 @@ namespace WalkingSimFramework.Helpers
         [SerializeField] private EquipmentPanelDataReader equippedItemVar;
         [Tooltip("(Optional) Location to spawn equipment item when used")]
         [SerializeField] private Transform equipmentSpawnLocation;
-        [Tooltip("(Optional) Item to be spawned at the equipment spawn location. Warning: Needs to be a prefab that isn't in the scene so it will not be destroyed.")]
+        [Tooltip("(Optional) Item to be spawned at the equipment spawn location. Warning: Needs to be a prefab that isn't in the scene otherwise it could be destroyed.")]
         [EnableIf("HasSpawnLocation")]
         [AllowNesting]
         [SerializeField] private GameObject equipmentSpawnItem;

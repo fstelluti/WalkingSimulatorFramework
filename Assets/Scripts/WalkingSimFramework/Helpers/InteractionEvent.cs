@@ -26,8 +26,10 @@ namespace WalkingSimFramework.Helpers
         [SerializeField] private EventContainer ActivationEvent;
         [ShowIf("IsToggleSelected")]
         [AllowNesting]
-        [SerializeField] private EventContainer DeActivationEvent; 
+        [SerializeField] private EventContainer DeActivationEvent;
 
+        [ShowIf("IsToggleSelected")]
+        [AllowNesting]
         [SerializeField] private bool StartActivated = false;
 
         bool m_activateOnce = true;

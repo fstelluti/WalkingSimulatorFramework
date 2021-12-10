@@ -18,10 +18,10 @@ namespace WalkingSimFramework.Interactable_System
 
         [Tooltip("Enable restricting the rotation about the horizontal (relative to the screen) axis")]
         [SerializeField] protected bool enableRotationXLimit;
-        [Tooltip("Angle limit rotating on the horizontal (relative to the screen) axis")]
+        [Tooltip("Angle limit rotation on the horizontal (relative to the screen) axis")]
         [EnableIf("enableRotationXLimit")]
         [MinValue(0f), MaxValue(360f)] [SerializeField] private float rotationXLimit = 25.0f;
-        [Tooltip("Enable to orient item so the top faces the camera")]
+        [Tooltip("Enable to orient the item so the top faces the camera")]
         [SerializeField] protected bool useReadingOrientation;
 
         protected Camera m_player_cam;
@@ -126,11 +126,14 @@ namespace WalkingSimFramework.Interactable_System
             
             if (Math.Abs(m_rotateValue.y) > 0.5)
             {
-                // This will add +/- 1 at each frame, basically giving the angle 
+                // This will add +/- 1 at each frame, giving an estimation of the angle 
                 m_totalAngle += m_rotateValue.y;
 
+                // Adjust X angle limit, as it should more closely resemble the actual rotation limit
+                float _adjustedXLimit = rotationXLimit * 3;
+
                 // Only rotate if in range or if we always allow it
-                if (!enableRotationXLimit || m_totalAngle >= -rotationXLimit && m_totalAngle <= rotationXLimit)
+                if (!enableRotationXLimit || m_totalAngle >= -_adjustedXLimit * 2 && m_totalAngle <= _adjustedXLimit * 2)
                 {
                     transform.RotateAround(m_itemRenderer.bounds.center, m_initXAxis * m_rotateValue.y, -1.0f * Time.deltaTime * rotationSpeed);
                 }
