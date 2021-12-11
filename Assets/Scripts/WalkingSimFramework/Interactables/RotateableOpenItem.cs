@@ -39,7 +39,10 @@ namespace WalkingSimFramework.Interactables
         {
             if(pivotTransform == null)
             {
-                return new DropdownList<Vector3>();
+                return new DropdownList<Vector3>()
+                {
+                    { "NoDirectionPossible",   Vector3.zero }
+                };
             }
 
             return new DropdownList<Vector3>()
