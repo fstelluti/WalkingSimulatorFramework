@@ -69,7 +69,7 @@ namespace WalkingSimFramework.Interactables
                 float _rotationCorrection = 85.0f;
 
                 Quaternion _targetRotation = Quaternion.LookRotation(_targetDirection);
-                _targetRotation *= Quaternion.Euler(_rotationCorrection, 0f, 0);
+                _targetRotation *= Quaternion.Euler(_rotationCorrection, 0f, 0f);
 
                 transform.rotation = _targetRotation;
 

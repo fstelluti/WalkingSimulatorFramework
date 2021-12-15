@@ -158,7 +158,7 @@ namespace WalkingSimFramework.Interactables
             }
 
             // Logic to toggle positions
-            // The target positionis offset to make sure that the item is centered in front of the camera
+            // The target position is offset to make sure that the item is centered in front of the camera
             Vector3 _targetPosition = m_isExaminingTranslateItem ? m_originalPosition : GetCameraTargetPosition();
             float _relativeSpeed = Mathf.Clamp(movementAnimSpeed * (_targetPosition - transform.position).magnitude, 1.0f, movementAnimSpeed + m_maxRelativeSpeedMultiplier); // If distance is large, speed is large
 

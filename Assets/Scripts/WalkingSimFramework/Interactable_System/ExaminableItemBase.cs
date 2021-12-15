@@ -12,7 +12,7 @@ namespace WalkingSimFramework.Interactable_System
     {
         [Space, Header("Examineable Settings")]
         [Tooltip("Distance scale the item should be from the camera. Smaller values are closer.")]
-        [Range(0.2f, 1.0f)] [SerializeField] protected float distanceScaleToCamera = 0.5f;
+        [Range(0.2f, 2.0f)] [SerializeField] protected float distanceScaleToCamera = 0.5f;
         [Tooltip("How fast to rotate the item when examining it")]
         [MinValue(0f)] [SerializeField] private float rotationSpeed = 120f;
 
@@ -56,6 +56,7 @@ namespace WalkingSimFramework.Interactable_System
             Vector3 _centerPosition = m_itemRenderer.bounds.center;
             m_centerDir = transform.position - _centerPosition;
         }
+
         public override void OnInteract()
         {
             base.OnInteract();
