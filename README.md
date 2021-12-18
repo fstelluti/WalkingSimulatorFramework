@@ -1,6 +1,6 @@
 # Walking Simulator Framework for Unity
 
-> Set of tools used for walking simulator or exploration based games.
+> Set of tools used for walking simulators or exploration based games.
 
 #### Features
 
@@ -14,7 +14,14 @@
 * Test scene with several prefab based examples
 * Basic Inventory UI (included for demonstration purposes)
 
-Compatible with Unity 2020
+Compatible with Unity 2020.3.12f, 2021.1.0f1 and above
+
+---
+
+![BookAnim_02](https://user-images.githubusercontent.com/10926088/146653353-dd44baf3-ccf6-4ba0-8537-57b53a6192c9.gif)
+
+![Overalnteractions_03](https://user-images.githubusercontent.com/10926088/146653363-0c31f404-aeea-47c7-ab82-9048f64fbbe0.gif)
+
 
 ---
 
@@ -34,9 +41,9 @@ Unity Packages needed:
 There are two options. Either download the whole project, open it with Unity, and open the scene included in the project (SampleScene).
 This wiil include a basic Inventory/HUD system.
 
-Or download the Unity package and set it up in another project.
+Or download the Unity package from the [Releases](https://github.com/fstelluti/WalkingSimulatorFramework/releases) section and set it up in another project.
 
-More detailed use cases will be outlined in the Wiki.
+More detailed use cases will be outlined in the [Wiki](https://github.com/fstelluti/WalkingSimulatorFramework/wiki).
 
 ---
 
