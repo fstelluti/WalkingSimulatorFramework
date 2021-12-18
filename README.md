@@ -43,7 +43,7 @@ This wiil include a basic Inventory/HUD system.
 
 Or download the Unity package from the [Releases](https://github.com/fstelluti/WalkingSimulatorFramework/releases) section and set it up in another project.
 
-More detailed use cases will be outlined in the [Wiki](https://github.com/fstelluti/WalkingSimulatorFramework/wiki).
+More details for the package setup and general information is outlined in the [Wiki](https://github.com/fstelluti/WalkingSimulatorFramework/wiki).
 
 ---
 
