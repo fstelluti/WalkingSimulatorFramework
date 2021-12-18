@@ -325,8 +325,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.1282692, y: 2.3339937, z: 1.1000152}
-  m_Center: {x: -0.049567223, y: 1.1669968, z: -0.5500076}
+  m_Size: {x: 0.048051834, y: 2.3339937, z: 1.1000152}
+  m_Center: {x: -0.009458542, y: 1.1669968, z: -0.5500076}
 --- !u!114 &5125204919607470627
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,7 +353,7 @@ MonoBehaviour:
     StartActivated: 0
   inventoryItem: {fileID: 0}
   equipmentEventInfo:
-    equipmentItemType: 0
+    equipmentItemType: {fileID: 0}
     equippedItemVar:
       _owner: {fileID: 0}
       _ownerName: 

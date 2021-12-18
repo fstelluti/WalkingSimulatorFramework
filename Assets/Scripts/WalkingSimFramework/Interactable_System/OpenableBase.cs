@@ -77,7 +77,7 @@ namespace WalkingSimFramework.Interactable_System
         protected virtual void OnTriggerEnter(Collider _other)
         {
             // Only pause coroutines if can have a collision
-            if (m_shouldCloseNext && m_hasColliderWithoutTrigger)
+            if (m_hasColliderWithoutTrigger)
             {
                 m_pauseCoroutine = true;
             }
