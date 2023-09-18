@@ -44,9 +44,9 @@ namespace WalkingSimFramework.Scriptable_Objects.Events
         public bool OnAddToInventory(InventoryItemBase _item) 
         {
             // Add to UI first
-            bool _addedInventory = addToInventoryDelegate(_item);
+            bool _addedInventory = addToInventoryDelegate != null ? addToInventoryDelegate(_item) : false;
 
-            if(_addedInventory)
+            if (_addedInventory)
             {
                 AddItem(_item);
             }
@@ -56,7 +56,10 @@ namespace WalkingSimFramework.Scriptable_Objects.Events
 
         public void OnRemoveEqippedItemFromInventory()
         {
-            removeEqipmentFromInventoryDelegate();
+            if (removeEqipmentFromInventoryDelegate != null)
+            {
+                removeEqipmentFromInventoryDelegate();
+            }
         }
 
         public void OnRemoveFromInventory(InventoryItemBase _item)

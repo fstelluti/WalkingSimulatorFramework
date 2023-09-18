@@ -62,7 +62,7 @@ namespace WalkingSimFramework.Interactable_System
 
         void Awake()
         {
-            m_player_cam = FindObjectOfType<Camera>();
+            m_player_cam = FindFirstObjectByType<Camera>();
 
             m_crosshairUI = crosshairUI.GetComponent<InteractionUIPanel>();
 
